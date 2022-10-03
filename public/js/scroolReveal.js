@@ -10,5 +10,6 @@ ScrollReveal().reveal(".section_3");
 ScrollReveal().reveal(".section_3_h2");
 ScrollReveal().reveal(".contenedor_cards", { delay: 800 });
 ScrollReveal().reveal(".servicios", { delay: 800 });
+ScrollReveal().reveal(".nosotros", { delay: 800 });
 ScrollReveal().reveal(".formulario", { delay: 800 });
-ScrollReveal().reveal("footer", { delay:200, duration:600});
+/* ScrollReveal().reveal("footer", { delay:200, duration:600}); */
