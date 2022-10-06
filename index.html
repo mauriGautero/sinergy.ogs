@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/css/uni_parallax.css">
-    <link rel="stylesheet" href="/public/css/index.css">
+    <!-- <link rel="stylesheet" href="/public/css/uni_parallax.css"> -->
+    <!-- <link rel="stylesheet" href="/public/css/index.css"> -->
+    <link rel="stylesheet" href="/public/css/nuevo.css">
+    
     <title>Singery OSG</title>
 </head>
-<body>
-  <div class="container">
-    
-  </div>
+<body>  
   <header>
           <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">                   
-                    <img src="/public/img/logo_full_sinergy_ogs.png" alt="logo" class="img-responsive">                      
+                    <img src="/public/img/logo_full_sinergy_ogs.png" alt="logo" class="img-fluid">                      
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -26,7 +25,7 @@
                   <ul class="navbar-nav">
                     <li class="nav-item">
                       
-                      <a class="nav-link" aria-current="page" href="/index.html"><span class="menu_nombre">Inicio</span></a>
+                      <a class="nav-link" aria-current="page" href="/index.html#section_1"><span class="menu_nombre">Inicio</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="index.html#servicios"><span class="menu_nombre">Servicios</span></a>
@@ -42,132 +41,94 @@
               </div>
           </nav>        
   </header>
-  <main>
-      <!-- <article> -->
-          <section class="section_1">
-            <!-- <div class="parallax__container"></div> -->
-           <!--  <div class="parallax" data-parallax-image="/public/img/climate.jpg"></div> -->
-            <div class="contenido_section_1">
+  <main>      
+          <section class="section_1">           
+            <div class="contenido_section_1" id="section_1">
               <div class="texto_section1">
-                 <h1 >
-                  Lorem ipsum dolor
-                 </h1>
+                 <h1 > Lorem ipsum dolor </h1>
                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit facere quidem nam quos. Inventore est eveniet quis, facilis doloremque natus reiciendis, ut fugiat incidunt nemo eligendi aperiam, debitis itaque laboriosam.</p>
-                </div>
-                <div class="imagen_section1">
-                  <img src="/public/img/completed_tasks.svg" alt="" srcset="">
-                </div>
+              </div>
+              <div class="imagen_section1">
+                  <img src="/public/img/online_laptop_smartphone_icon.png" id="laptop" alt="ilustracion impresora">
+                  <!-- <video src="/public/img/content-moderation.mp4" id="video" autoplay loop></video> -->
+              </div>
              </div>
           </section>
+          
           <section class="section_2">              
             <div class="contenido_section_2">
               <div class="imagen_section2">
-                <img src="/public/img/svg/printing.svg" alt="" srcset="">
+                <!-- <img src="/public/img/12083253_Wavy_Bus-10_Single-03.jpg"  alt="" id="goal" srcset=""> -->
+                <video src="/public/img/data-visualization-analytics.mp4" width="500" autoplay loop></video>
               </div>
               <div class="texto_section2">
-                 <h2>
-                  Lorem ipsum dolor
-                 </h2>
+                 <h2>Lorem ipsum dolor </h2>
                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit facere quidem nam quos. Inventore est eveniet quis, facilis doloremque natus reiciendis, ut fugiat incidunt nemo eligendi aperiam, debitis itaque laboriosam.</p>
                 </div>
-             </div>
+             </div>     
                
-          </section>  
-          <section class="section_3 justify-content-evenly d-flex flex-row flex-wrap ">            
-                  <h2 class="section_3_h2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est architecto eum</h2>
-                  <div class="contenedor_cards">
-                      <ul>
-                        <li>
-                          <div class="card">
-                            <div class="info">
-                              <img src="./public/img/business_.png" alt="" srcset="">
-                              <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est architecto eum
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="card">
-                            <div class="info">
-                              <img src="./public/img/business_.png" alt="" srcset="">
-                              <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est architecto eum
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="card">
-                            <div class="info">
-                              <img src="./public/img/business_.png" alt="" srcset="">
-                              <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est architecto eum
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="card">
-                            <div class="info">
-                              <img src="./public/img/business_.png" alt="" srcset="">
-                              <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est architecto eum
-                              </p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                  </div>
           </section>
+
           <!-- -------------------------- seccion servicios -------------------------- -->
           <section class="servicios" id="servicios">
-             <div class="content_servicios">
-              <div>
+             <div  class="content_servicios">
+              <div class="servicios_presentacion">
                 <h2>Servicios</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores adipisci, odio quasi quidem quos deserunt dignissimos mollitia illum nisi! Soluta perferendis eum assumenda dolore veniam odit ad molestias consequatur accusamus?</p>
               </div>
-
-              <div class="card">
-                <img class="card-img-top" src="/public/img/family_apps/apps_gestion.png" alt="" srcset="">
-                <div class="card-body">
-                  <h5 class="card-title">Sinergy Gestión</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="conten-card">
+                <div class="card">
+                  <img class="card-img-top" src="/public/img/family_apps/apps_gestion.png" alt="" srcset="">
+                  <div class="card-body">
+                    <h5 class="card-title">Sinergy Gestión</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="/public/img/family_apps/apps_control.png" alt="" srcset="">
+                  <div class="card-body">
+                    <h5 class="card-title">Sinergy Gestión</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="/public/img/family_apps/apps_proveedores.png" alt="" srcset="">
+                  <div class="card-body">
+                    <h5 class="card-title">Sinergy Gestión</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+              
+                <div class="card">
+                  <img class="card-img-top" src="/public/img/family_apps/apps_boot.png" alt="" srcset="">
+                  <div class="card-body">
+                    <h5 class="card-title">Sinergy Gestión</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="/public/img/family_apps/apps_msj.png" alt="" srcset="">
+                  <div class="card-body">
+                    <h5 class="card-title">Sinergy Gestión</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="/public/img/family_apps/apps_msj.png" alt="" srcset="">
+                  <div class="card-body">
+                    <h5 class="card-title">Sinergy Gestión</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
                 </div>
               </div>
-              <div class="card">
-                <img class="card-img-top" src="/public/img/family_apps/apps_control.png" alt="" srcset="">
-                <div class="card-body">
-                  <h5 class="card-title">Sinergy Gestión</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="/public/img/family_apps/apps_proveedores.png" alt="" srcset="">
-                <div class="card-body">
-                  <h5 class="card-title">Sinergy Gestión</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="/public/img/family_apps/apps_boot.png" alt="" srcset="">
-                <div class="card-body">
-                  <h5 class="card-title">Sinergy Gestión</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="/public/img/family_apps/apps_msj.png" alt="" srcset="">
-                <div class="card-body">
-                  <h5 class="card-title">Sinergy Gestión</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+             
+             
              </div>
           </section>
 
@@ -178,27 +139,27 @@
                 <h2>Nosotros</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores adipisci, odio quasi quidem quos deserunt dignissimos mollitia illum nisi! Soluta perferendis eum assumenda dolore veniam od</p>
               </div>
-              <div class="cards-nostros">
-                <div class="card">
-                  <img class="card-img-top m-3" src="/public/img/usuario.jpeg" alt="" srcset="">
+              <div class="cards-nosotros">
+                <div class="card-us">
+                  <img class="card-img-top" src="/public/img/usuario.jpeg" alt="" srcset="">
                   <div class="card-body">
-                    <h5 class="card-title">Lorem Lorem</h5>
+                    <h4 class="card-title">Ruben Galleguillo</h4>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top m-3" src="/public/img/usuario.jpeg" alt="" srcset="">
+                <div class="card-us">
+                  <img class="card-img-top" src="/public/img/usuario.jpeg" alt="" srcset="">
                   <div class="card-body">
-                    <h5 class="card-title">Lorem Lorem</h5>
+                    <h4 class="card-title">José Ontivero</h4>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
-                <div class="card">
-                  <img class="card-img-top m-3" src="/public/img/usuario.jpeg" alt="" srcset="">
+                <div class="card-us">
+                  <img class="card-img-top" src="/public/img/usuario.jpeg" alt="" srcset="">
                   <div class="card-body">
-                    <h5 class="card-title">Lorem Lorem</h5>
+                    <h4 class="card-title">Marcelo Serrano</h4>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
@@ -208,7 +169,7 @@
 
           </section>
           <!-- -------------------------- seccion contacto --------------------------- -->
-          <section class="contacto" id="contacto">
+          <section hidden class="contacto" id="contacto">
             <form action="" class="formulario">
               <h2>CONTACTO</h2>
                     <form-group class="inputs">
@@ -265,12 +226,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- parallax -->
-    <script src="/public/js/uni_parallax.js"></script>
-    <script>
-      new universalParallax().init({
-	     speed: 3.0
-      });
-    </script>
+    <script src="/public/js/scroll_parallax.js"></script>
+  
   <!-- scroll reveal -->
   <!--   -->
 
