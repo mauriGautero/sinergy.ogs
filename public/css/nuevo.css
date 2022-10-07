@@ -117,8 +117,8 @@ main {
   height: 2em;
   border-radius: 50%;
   position: fixed;
-  bottom: 2em;
-  right: 1em;
+  bottom: .5em;
+  right: .5em;
   border: none !important;
   caret-color: none !important;
   background-color: var(--verde_boton);
@@ -127,6 +127,9 @@ main {
   transform: scale3d(1);
   transition: transform 2s ease;
   
+}
+.subir:hover{
+  box-shadow: 2px 5px 6px rgba(128, 128, 128, 0.718);
 }
 
 section {
@@ -315,13 +318,13 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(-2px 5px 12px rgba(89, 88, 88, 0.452));
+ box-shadow: -2px 5px 12px rgba(89, 88, 88, 0.452);
 }
 
 .card:hover {
   transform: scale(1.03);
   transition: all 0.3s ease-in-out;
-  filter: drop-shadow(-2px 5px 6px rgba(89, 88, 88, 0.452));
+  box-shadow: -2px 5px 6px rgba(89, 88, 88, 0.452);
 }
 
 .card .card-body {
@@ -606,13 +609,10 @@ footer .direccion {
   color: rgb(65, 61, 61);
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   font-weight: 400  ;
 }
 .direccion ion-icon{
-  /* width: 4em;
-  height: 4em;
-  z-index: 100;
-  position: relative; */
   vertical-align: text-bottom;
 }
 
@@ -643,7 +643,7 @@ a {
   text-align: center;
   background-color: rgb(247, 246, 246);
   color: rgb(31, 30, 30);
-  width: 100vw;
+  width: 100%;
   height: 10em;
 }
 .derechos p{
