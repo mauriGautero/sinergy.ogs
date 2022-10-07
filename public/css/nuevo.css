@@ -606,12 +606,14 @@ footer .direccion {
   color: rgb(65, 61, 61);
   display: flex;
   flex-direction: row;
+  font-weight: 400  ;
 }
-.direccion img{
-  width: 4em;
+.direccion ion-icon{
+  /* width: 4em;
   height: 4em;
   z-index: 100;
-  position: relative;
+  position: relative; */
+  vertical-align: text-bottom;
 }
 
 footer .barra-nav_footer ul,
@@ -665,6 +667,7 @@ footer .redes_sociales ion-icon {
   font-size: 1.5em;
   gap: 2.5em;
   color: rgb(28, 26, 26);
+  margin-bottom: 1em;
 }
 
 /* ------------------------------ iconos redes ------------------------------ */
@@ -701,6 +704,9 @@ footer .redes_sociales ion-icon {
 
   .section_1 {
     height: 50vh;
+  }
+  .texto_section1 h1{
+    margin-top: 2em;
   }
 
   .contenido_section_1,
@@ -883,6 +889,11 @@ footer .redes_sociales ion-icon {
     outline-offset: 0 !important;
     width: 100% !important;
 
+  }
+  footer .direccion {
+   
+    margin-left: 1.5em; ;
+   
   }
 
 }
