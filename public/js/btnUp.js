@@ -1,6 +1,6 @@
 const showOnPx = 500;
 let backToTopButton = document.querySelector(".subir");
-let tabpanel=document.querySelector(".section_1");
+let tabpanel=document.querySelector(".toper");
 
 const scrollContainer = () => {
 return document.documentElement.scrollTop || tabpanel;
