@@ -701,6 +701,9 @@ footer .redes_sociales ion-icon {
   .navbar-brand {
     margin-left: 0 !important;
   }
+  .barra-nav_footer{
+    margin-bottom: 1em;
+  }
 
   .section_1 {
     height: 50vh;
