@@ -43,7 +43,6 @@ header {
     grid-template-columns: 3fr;
     grid-template-rows: 1fr; */
   position: sticky;
-
   top: 0;
   z-index: 100;
   background-color: whitesmoke !important;
@@ -126,11 +125,9 @@ main {
   cursor: pointer;
   transform: scale3d(1);
   transition: transform 2s ease;
-  
-}
-.subir:hover{
   box-shadow: 2px 5px 6px rgba(128, 128, 128, 0.718);
 }
+
 
 section {
   max-width: 100%;
@@ -203,11 +200,13 @@ section {
   width: 25vw;
   position: relative;
   animation: shake_ 4s ease-in-out infinite;
+  margin-bottom: 1em;
   /* filter: drop-shadow(-2px 0px 6px rgba(16, 16, 16, 0.873)); */
 }
 
 .imagen_section2 img {
   width: 25vw;
+  margin-top: 1em;
   position: relative;
   animation: shakex 5s ease-in-out infinite;
   /* filter: drop-shadow(-2px 0px 6px rgba(16, 16, 16, 0.873)); */
@@ -296,8 +295,7 @@ section {
   padding: 10px;
 }
 
-.conten-card,
-.cards-nosotros {
+.conten-card{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -400,7 +398,16 @@ section {
 
 .nosotros {
   margin-top: 4em !important;
-
+ 
+}
+.cards-nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+  width: 100vw;
+  margin-bottom: 1.5em;
 }
 
 .card-us {
@@ -426,9 +433,9 @@ summary::marker {
 
 .card-us .card-title {
   margin-top: .2em;
-  font-family: 'Satisfy', cursive;
-  font-size: 1.8em;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
   text-align: center !important;
 }
 
@@ -517,6 +524,8 @@ summary::marker {
 }
 
 .mapa iframe {
+  margin-top: .5em;
+  margin-bottom: 1em;
   width: 600px !important;
   height: 400px !important;
   filter: drop-shadow(2px 5px 10px rgba(77, 76, 76, 0.466));
@@ -596,7 +605,7 @@ footer {
   align-items: center;
   width: 100%;
   height: 40vh;
-  background-color: var(--verde_muyclaro);
+  background-color: var(--verde_difuso);
   bottom: auto;
 }
 
@@ -645,12 +654,13 @@ a {
   color: rgb(31, 30, 30);
   width: 100%;
   height: 10em;
+  bottom: 0;
 }
 .derechos p{
   margin-top: 4em;
 }
 .derechos img{
-  width: 12.5vh;
+  width: 13vh;
 }
 
 footer .redes_sociales {
@@ -814,7 +824,6 @@ footer .redes_sociales ion-icon {
 }
 .card-us .card-title {
   margin-top: .2em;
-  font-family: 'Satisfy', cursive;
   font-size: 1.5em;
   font-weight: 400;
   text-align: center !important;
