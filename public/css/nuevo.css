@@ -131,11 +131,13 @@ main {
 
 section {
   max-width: 100%;
+  height: auto;
   margin: 0 auto;
   margin-top: 1em;
   display: flex;
   justify-content: center;
   align-content: center;
+  
 }
 
 /* -------------------------------- section 1 ------------------------------- */
@@ -256,6 +258,7 @@ section {
 .servicios {
   margin-top: 4em;
   width: 100%;
+  height:  auto;
   min-height: 100%;
   display: flex;
   flex-direction: row;
@@ -264,15 +267,16 @@ section {
   background-color: var(--verde_soft);
 }
 
-.content_servicios,
-.content_nosotros {
+.content_servicios {
   display: flex;
-  flex-direction: row;
-  /*cambio*/
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   gap: .2em;
+  width: 100% ;
 }
+
 
 .servicios_presentacion,
 .nosotros_detalle {
@@ -341,26 +345,81 @@ section {
 }
 
 .contenedor_carrucel {
+  margin-top: 2em;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100% !important;
-  height: auto;
+  max-width: 100% !important;
+  height: 10em;
+
 
 }
 
-.carrucel {
-  width: 100%;
-}
 
 .d-block {
   width: 5em;
   height: 10em;
 }
 
+/* -------------------------------- CARRUSEL -------------------------------- */
+
+@-webkit-keyframes scroll {
+ 0% {
+   transform: translateX(0);
+ }
+ 100% {
+   transform: translateX(calc(-250px * 7));
+ }
+}
+
+@keyframes scroll {
+ 0% {
+   transform: translateX(0);
+ }
+ 100% {
+   transform: translateX(calc(-250px * 7));
+ }
+}
+.slider {
+ background: rgb(18, 17, 17) !important;
+ box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+ height: 100px;
+ margin: auto;
+ overflow: hidden;
+ position: relative;
+ max-width: 100%;
+}
+.slider::before, .slider::after {
+ /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
+ content: "";
+ height: 100px;
+ position: absolute;
+ width: 200px;
+ z-index: 2;
+}
+.slider::after {
+ right: 0;
+ top: 0;
+ transform: rotateZ(180deg);
+}
+.slider::before {
+ left: 0;
+ top: 0;
+}
+.slider .slide-track {
+ -webkit-animation: scroll 40s linear infinite;
+         animation: scroll 40s linear infinite;
+ display: flex;
+ width: calc(250px * 14);
+}
+.slider .slide {
+ height: 100px;
+ width: 250px;
+}
 /* -------------------------- fin seccion servicios ------------------------- */
+
 
 /* --------------------------------seccion nosotros -------------------------------- */
 @keyframes bounceInUp {
@@ -395,7 +454,15 @@ section {
     transform: translate3d(0, 0, 0);
   }
 }
-
+.content_nosotros {
+  display: flex;
+  flex-direction: row;
+  /*cambio*/
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .2em;
+  width: 100%;
+}
 .nosotros {
   margin-top: 4em !important;
  
@@ -424,7 +491,9 @@ summary strong,
 summary::marker {
   color: var(--azul);
 }
-
+.servicios_presentacion p{
+  width: 100% !important;
+}
 .card-us .card-body {
   width: 25em;
   height: 16em;
@@ -526,7 +595,7 @@ summary::marker {
 .mapa iframe {
   margin-top: .5em;
   margin-bottom: 1em;
-  width: 600px !important;
+  width: 500px !important;
   height: 400px !important;
   filter: drop-shadow(2px 5px 10px rgba(77, 76, 76, 0.466));
   border-radius: .5em;
@@ -649,15 +718,14 @@ a {
   transition: all 0.2s ease-in-out;
 }
 .derechos{
-  text-align: center;
-  background-color: rgb(247, 246, 246);
+  text-align: center;  
   color: rgb(31, 30, 30);
   width: 100%;
-  height: 10em;
-  bottom: 0;
+  height: 5em; 
 }
 .derechos p{
-  margin-top: 4em;
+  margin-top: 8em;
+
 }
 .derechos img{
   width: 13vh;
@@ -705,7 +773,9 @@ footer .redes_sociales ion-icon {
   filter: drop-shadow(2px 5px 2px rgba(16, 16, 16, 0.573));
 }
 
-
+/* -------------------------------------------------------------------------- */
+/*                               MODO RESPONSIVE                              */
+/* -------------------------------------------------------------------------- */
 
 @media screen and (max-width:380px) {
   .navbar-brand {
@@ -760,9 +830,9 @@ footer .redes_sociales ion-icon {
     padding: 15px;
 
   }
-  .servicios_presentacion p{
+ /*  .servicios_presentacion p{
     width: 100% !important;
-  }
+  } */
 
   .imagen_section1,
   .imagen_section2 {
@@ -799,6 +869,72 @@ footer .redes_sociales ion-icon {
   text-align: center;
 
 }
+/* -------------------------------- CARRUSEL -------------------------------- */
+.contenedor_carrucel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100% !important;
+  height: 4em;
+
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+ }
+ 
+ @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+ }
+ .slider {
+  background: rgb(18, 17, 17) !important;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+ }
+ .slider::before, .slider::after {
+  /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+ }
+ .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+ }
+ .slider::before {
+  left: 0;
+  top: 0;
+ }
+ .slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+ }
+ .slider .slide {
+  height: 100px;
+  width: 250px;
+ }
+ 
 /* -------------------------------- nosotros -------------------------------- */
   .nosotros{
     width: 100%;
