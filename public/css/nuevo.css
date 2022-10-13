@@ -480,11 +480,11 @@ section {
 
 .cards-nosotros {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4em;
-  width: 50vw;
+  gap: 2em;
+  width: 60%;
   margin-bottom: 1.5em;
 }
 
@@ -500,7 +500,7 @@ section {
 
 summary strong,
 summary::marker {
-  color: var(--azul);
+  color: var(--azul) !important;
 }
 
 .servicios_presentacion p {
