@@ -585,6 +585,8 @@ summary::marker {
 }
 .titulo_tecno{
   margin-top: 2em;
+  width: 80%;
+  text-align: center;
 }
 .tecno{
   display: flex;
