@@ -354,10 +354,7 @@ section {
   align-items: center;
   max-width: 100% !important;
   height: 10em;
-
-
 }
-
 
 .d-block {
   width: 5em;
@@ -427,8 +424,8 @@ section {
 .slider .slide {
   height: 100px;
   width: 250px;
+  margin-left:100px;
 }
-
 /* -------------------------- fin seccion servicios ------------------------- */
 
 
@@ -1391,10 +1388,7 @@ footer .redes_sociales ion-icon {
     width: 250px;
     
   }
-  .slide img{
-    margin-right: 500px !important;
-    padding-right: 500px !important;
-  }
+  
 
   /* -------------------------------- nosotros -------------------------------- */
   .nosotros {
