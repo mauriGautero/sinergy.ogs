@@ -485,9 +485,9 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 1em;
-  width: 100vw;
+  justify-content: center;
+  gap: 4em;
+  width: 50vw;
   margin-bottom: 1.5em;
 }
 
@@ -927,12 +927,15 @@ footer .redes_sociales ion-icon {
   .imagen_section1,
   .imagen_section2 {
     width: 100%;
+    
 
   }
 
   .imagen_section1 img,
   .imagen_section2 img {
     width: 80vw;
+    padding: 2.5em;
+    margin-left: 2em;
   }
 
   /* -------------------------------- servicios ------------------------------- */
@@ -1278,6 +1281,8 @@ footer .redes_sociales ion-icon {
   .imagen_section1 img,
   .imagen_section2 img {
     width: 80vw;
+    padding: 2.5em;
+    margin-left: 2em;
   }
 
   /* -------------------------------- servicios ------------------------------- */
@@ -1349,6 +1354,7 @@ footer .redes_sociales ion-icon {
     overflow: hidden;
     position: relative;
     max-width: 100%;
+    
   }
 
   .slider::before,
@@ -1377,11 +1383,17 @@ footer .redes_sociales ion-icon {
     animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
+    
   }
 
   .slider .slide {
     height: 100px;
     width: 250px;
+    
+  }
+  .slide img{
+    margin-right: 500px !important;
+    padding-right: 500px !important;
   }
 
   /* -------------------------------- nosotros -------------------------------- */
@@ -1622,6 +1634,8 @@ footer .redes_sociales ion-icon {
   .imagen_section1 img,
   .imagen_section2 img {
     width: 80vw;
+    padding: 10em;
+    margin-left: 4em;
   }
 
   /* -------------------------------- servicios ------------------------------- */
@@ -1737,7 +1751,15 @@ footer .redes_sociales ion-icon {
   summary::marker {
     color: var(--azul) !important;
   }
-
+  .cards-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    width: 90vw;
+    margin-bottom: 1.5em;
+}
   .card-us {
     display: flex;
     flex-direction: column;
@@ -1964,6 +1986,8 @@ footer .redes_sociales ion-icon {
   .imagen_section1 img,
   .imagen_section2 img {
     width: 80vw;
+    padding: 2.5em;
+    margin-left: 2em;
   }
 
   /* -------------------------------- servicios ------------------------------- */
@@ -2079,7 +2103,15 @@ footer .redes_sociales ion-icon {
   summary::marker {
     color: var(--azul) !important;
   }
-
+  .cards-nosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    width: 90vw;
+    margin-bottom: 1.5em;
+}
   .card-us {
     display: flex;
     flex-direction: column;
