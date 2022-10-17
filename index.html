@@ -1,367 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="/public/css/uni_parallax.css"> -->
-    <!-- animate.css -->
-    <link rel="stylesheet" href="/public/css/animate.min.css"/>
-    <!-- <link rel="stylesheet" href="/public/css/index.css"> -->
-    <link rel="stylesheet" href="/public/css/nuevo.css">
-    <link rel="icon" type="image/jpg" href="/public/img/favicon/favicon-32x32.png"/>
-    
-    <title>Sinergy</title>
-</head>
-<body>  
-  <header>
-          <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">                   
-                    <img src="/public/img/logo_full_sinergy_ogs.png" alt="logo Sinergy OGS" class="img-fluid" loading="lazy">                      
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      
-                      <a class="nav-link" aria-current="page" href="/index.html"><span class="menu_nombre">Inicio</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html#servicios_seccion"><span class="menu_nombre">Servicios</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html#nosotros_seccion"><span class="menu_nombre">Nosotros</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html#contacto"><span class="menu_nombre"> Contacto</span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-          </nav>        
-  </header>
-  <h6 class="toper"> </h6>   
-  <main>       
-    <button class="subir hidden" ><ion-icon name="chevron-up-outline" class="icon-subir"></ion-icon></button>
-          <section class="section_1">           
-            <div class="contenido_section_1" id="section_1">
-              <div class="texto_section1">
-                 <h1 > Optimización de Procesos </h1>
-                 <p>Identificamos tareas manuales o repetitivas en los procesos críticos, encontramos áreas de mejora, ahorrando tiempos y reduciendo costos.</p>
-              </div>
-              <div class="imagen_section1">
-                  <img src="/public/img/online_laptop_smartphone_icon.png" id="laptop" alt="ilustracion impresora" >
-                  <!-- <video src="/public/img/content-moderation.mp4" id="video" autoplay loop></video> -->
-              </div>
-             </div>
-          </section>
-          
-          <section class="section_2">              
-            <div class="contenido_section_2">
-              <div class="imagen_section2 wow animate__animated animate__bounceInLeft">
-                <img src="/public/img/goal_aim_target_team_icon.png"  alt="" id="goal" >
-               <!--  <video src="/public/img/data-visualization-analytics.mp4" width="500" autoplay loop></video> -->
-              </div>
-              <div class="texto_section2 wow animate__animated animate__fadeInUp">
-                 <h2>Gestión e inteligencia documental </h2>
-                 <p class="wow animate__animated animate__fadeInUp">Complementamos la información del ERP gestionando toda la documentación en formato digital para finanzas, operaciones, facturación, cobranzas, proveedores, flota de vehículos, inmuebles y más.</p>
-                </div>
-             </div>     
-               
-          </section>
 
-          <!-- -------------------------- seccion servicios -------------------------- -->
-          <h5 id="servicios_seccion"></h5>
-          <section class="servicios" id="servicios">
-             <div  class="content_servicios">              
-              <div class="servicios_presentacion wow animate__animated animate__fadeInUp">
-                <h2>Servicios</h2>
-                <p class="wow animate__animated animate__fadeInUp">Conectamos empresas, personas, documentos y procesos. hacemos que las operaciones del día a día de su organización sean más eficientes. agilizamos los tiempos operativos, minimizando la carga de trabajo pero aumentando la disponibilidad del servicio hacia sus clientes y proveedores. brindamos una vía agil para conectar con sus públicos</p>
-                <p class="wow animate__animated animate__fadeInUp">Facilitamos el camino hacia la oficina sin papel, administrando documentos digitales, aplicando inteligencia sobre procesos y datos almacenados.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="/public/css/uni_parallax.css"> -->
+  <!-- animate.css -->
+  <link rel="stylesheet" href="/public/css/animate.min.css" />
+  <!-- <link rel="stylesheet" href="/public/css/index.css"> -->
+  <link rel="stylesheet" href="/public/css/nuevo.css">
+  <link rel="icon" type="image/jpg" href="/public/img/favicon/favicon-32x32.png" />
+
+  <title>Sinergy</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/public/img/logo_full_sinergy_ogs.png" alt="logo Sinergy OGS" class="img-fluid" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+
+              <a class="nav-link" aria-current="page" href="/index.html"><span class="menu_nombre">Inicio</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#servicios_seccion"><span class="menu_nombre">Servicios</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#nosotros_seccion"><span class="menu_nombre">Nosotros</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contacto"><span class="menu_nombre"> Contacto</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h6 class="toper"> </h6>
+  <main>
+    <button class="subir hidden">
+      <ion-icon name="chevron-up-outline" class="icon-subir"></ion-icon>
+    </button>
+    <section class="section_1">
+      <div class="contenido_section_1" id="section_1">
+        <div class="texto_section1">
+          <h1> Optimización de Procesos </h1>
+          <p>Identificamos tareas manuales o repetitivas en los procesos críticos, encontramos áreas de mejora,
+            ahorrando tiempos y reduciendo costos.</p>
+        </div>
+        <div class="imagen_section1">
+          <img src="/public/img/online_laptop_smartphone_icon.png" id="laptop" alt="ilustracion impresora">
+          <!-- <video src="/public/img/content-moderation.mp4" id="video" autoplay loop></video> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section_2">
+      <div class="contenido_section_2">
+        <div class="imagen_section2 wow animate__animated animate__bounceInLeft">
+          <img src="/public/img/goal_aim_target_team_icon.png" alt="" id="goal">
+          <!--  <video src="/public/img/data-visualization-analytics.mp4" width="500" autoplay loop></video> -->
+        </div>
+        <div class="texto_section2 wow animate__animated animate__fadeInUp">
+          <h2>Gestión e inteligencia documental </h2>
+          <p class="wow animate__animated animate__fadeInUp">Complementamos la información del ERP gestionando toda la
+            documentación en formato digital para finanzas, operaciones, facturación, cobranzas, proveedores, flota de
+            vehículos, inmuebles y más.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- -------------------------- seccion servicios -------------------------- -->
+    <h5 id="servicios_seccion"></h5>
+    <section class="servicios" id="servicios">
+      <div class="content_servicios">
+        <div class="servicios_presentacion wow animate__animated animate__fadeInUp">
+          <h2>Servicios</h2>
+          <p class="wow animate__animated animate__fadeInUp">Conectamos empresas, personas, documentos y procesos.
+            hacemos que las operaciones del día a día de su organización sean más eficientes. agilizamos los tiempos
+            operativos, minimizando la carga de trabajo pero aumentando la disponibilidad del servicio hacia sus
+            clientes y proveedores. brindamos una vía agil para conectar con sus públicos</p>
+          <p class="wow animate__animated animate__fadeInUp">Facilitamos el camino hacia la oficina sin papel,
+            administrando documentos digitales, aplicando inteligencia sobre procesos y datos almacenados.</p>
+        </div>
+        <div class="conten-card">
+          <div class="card wow animate__animated animate__bounceInUp">
+            <img class="card-img-top" src="/public/img/family_apps/apps_gestion.png" alt="" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Sinergy Gestión</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates dolor, consectetur dolore!.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <div class="card wow animate__animated animate__bounceInUp">
+            <img class="card-img-top" src="/public/img/family_apps/apps_control.png" alt="" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Sinergy Control</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates dolor, consectetur dolore!.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <div class="card wow animate__animated animate__bounceInUp">
+            <img class="card-img-top" src="/public/img/family_apps/apps_proveedores.png" alt="" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Sinergy Proveedores</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates dolor, consectetur dolore!.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+
+          <div class="card wow animate__animated animate__bounceInUp">
+            <img class="card-img-top" src="/public/img/family_apps/apps_boot.png" alt="" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Sinergy Bot Power</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates dolor, consectetur dolore!.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <div class="card wow animate__animated animate__bounceInUp">
+            <img class="card-img-top" src="/public/img/family_apps/apps_msj.png" alt="" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Sinergy Mensajería</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates dolor, consectetur dolore!.</p>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+
+        </div>
+        <div class="contenedor_carrucel wow animate__animated animate__fadeInRight">
+          <h4>Empresas que <strong>confían en Sinergy</strong> </h4>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="/public/img/adder.png" height="100" width="250" alt="" loading="lazy" />
               </div>
-              <div class="conten-card">
-                <div class="card wow animate__animated animate__bounceInUp">
-                  <img class="card-img-top" src="/public/img/family_apps/apps_gestion.png" alt="" loading="lazy">
-                  <div class="card-body">
-                    <h5 class="card-title">Sinergy Gestión</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  </div>
-                </div>
-                <div class="card wow animate__animated animate__bounceInUp">
-                  <img class="card-img-top" src="/public/img/family_apps/apps_control.png" alt="" loading="lazy">
-                  <div class="card-body">
-                    <h5 class="card-title">Sinergy Control</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  </div>
-                </div>
-                <div class="card wow animate__animated animate__bounceInUp">
-                  <img class="card-img-top" src="/public/img/family_apps/apps_proveedores.png" alt="" loading="lazy">
-                  <div class="card-body">
-                    <h5 class="card-title">Sinergy Proveedores</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  </div>
-                </div>
-              
-                <div class="card wow animate__animated animate__bounceInUp">
-                  <img class="card-img-top" src="/public/img/family_apps/apps_boot.png" alt="" loading="lazy">
-                  <div class="card-body">
-                    <h5 class="card-title">Sinergy Bot Power</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  </div>
-                </div>
-                <div class="card wow animate__animated animate__bounceInUp">
-                  <img class="card-img-top" src="/public/img/family_apps/apps_msj.png" alt="" loading="lazy">
-                  <div class="card-body">
-                    <h5 class="card-title">Sinergy Mensajería</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  </div>
-                </div>
-               
-              </div>             
-              <div class="contenedor_carrucel wow animate__animated animate__fadeInRight">
-                <h4>Empresas que  <strong>confían en Sinergy</strong>   </h4>
-                  <div class="slider">
-                    <div class="slide-track">
-                      <div class="slide">
-                        <img src="/public/img/adder.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>                      
-                      <div class="slide">
-                        <img src="/public/img/san_alfonso.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/logo_kersia.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/porta.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/j|o.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/proma.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/adder.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>                      
-                      <div class="slide">
-                        <img src="/public/img/san_alfonso.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/logo_kersia.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/porta.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/j|o.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/proma.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/adder.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>                      
-                      <div class="slide">
-                        <img src="/public/img/san_alfonso.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/logo_kersia.png" height="100" width="250" alt="" loading="lazy"/>
-                      </div>
-                      <div class="slide">
-                        <img src="/public/img/porta.png" height="100" width="250" alt="" loading="lazy"/>
-                    </div>
-                  </div>
+              <div class="slide">
+                <img src="/public/img/san_alfonso.png" height="100" width="250" alt="" loading="lazy" />
               </div>
-             </div >
-            </section>
-            
-            <!-- -------------------------- seccion Nosotros --------------------------- -->
-            <h5 id="nosotros_seccion"></h5>
-            <section class="nosotros" id="nosotros">
-            <div class="content_nosotros">
-              <div class="nosotros_detalle wow animate__animated animate__fadeInUp">
-                <h2>Nosotros</h2>
-                <p class="wow animate__animated animate__fadeInUp">Somos un equipo de profesionales con más de 20 años de trayectoria asesorando y ayudando a empresas en los procesos, en proyectos de  innovación, en su gestión laboral e impositiva, en prevención y aseguramiento de riesgos.</p>
-                <p class="wow animate__animated animate__fadeInUp">Tenemos una mirada integral de la empresa, una mirada sistémica. Entendemos que la mejor manera de abordar un problema es analizarlo desde todos los enfoques posibles para encontrar la solución más eficiente.</p>
-                <p class="wow animate__animated animate__fadeInUp">Compartimos valores y filosofía de trabajo con un alto grado de auto exigencia en la calidad de lo que hacemos</p>
-                <p class="wow animate__animated animate__fadeInUp">Conocé un poco más nuestro equipo directivo</p>
+              <div class="slide">
+                <img src="/public/img/logo_kersia.png" height="100" width="250" alt="" loading="lazy" />
               </div>
-              <div class="cards-nosotros">
-                <div class="card-us wow animate__animated animate__bounceInUp">
-                  <img class="card-img-top" src="/public/img/usuario.jpeg" alt="Foto Ruben Galleguillo" loading="lazy">
-                  <h4 class="card-title">Ruben Galleguillo</h4>
-                  <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates.</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates ipsum dolor.</p>
-                    <details>
-                      <summary>
-                        <strong>Leer más >></strong>
-                      </summary>
-                      <!-- <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Especializado en la gestión e inteligencia documental.</p>
+              <div class="slide">
+                <img src="/public/img/porta.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/j|o.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/proma.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/adder.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/san_alfonso.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/logo_kersia.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/porta.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/j|o.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/proma.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/adder.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/san_alfonso.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/logo_kersia.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+              <div class="slide">
+                <img src="/public/img/porta.png" height="100" width="250" alt="" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- -------------------------- seccion Nosotros --------------------------- -->
+    <h5 id="nosotros_seccion"></h5>
+    <section class="nosotros" id="nosotros">
+      <div class="content_nosotros">
+        <div class="nosotros_detalle wow animate__animated animate__fadeInUp">
+          <h2>Nosotros</h2>
+          <p class="wow animate__animated animate__fadeInUp">Somos un equipo de profesionales con más de 20 años de
+            trayectoria asesorando y ayudando a empresas en los procesos, en proyectos de innovación, en su gestión
+            laboral e impositiva, en prevención y aseguramiento de riesgos.</p>
+          <p class="wow animate__animated animate__fadeInUp">Tenemos una mirada integral de la empresa, una mirada
+            sistémica. Entendemos que la mejor manera de abordar un problema es analizarlo desde todos los enfoques
+            posibles para encontrar la solución más eficiente.</p>
+          <p class="wow animate__animated animate__fadeInUp">Compartimos valores y filosofía de trabajo con un alto
+            grado de auto exigencia en la calidad de lo que hacemos</p>
+          <p class="wow animate__animated animate__fadeInUp">Conocé un poco más nuestro equipo directivo</p>
+        </div>
+        <div class="cards-nosotros">
+          <div class="card-us wow animate__animated animate__bounceInUp">
+            <img class="card-img-top" src="/public/img/usuario.jpeg" alt="Foto Ruben Galleguillo" loading="lazy">
+            <h4 class="card-title">Ruben Galleguillo</h4>
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates.</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates ipsum dolor.</p>
+              <details>
+                <summary>
+                  <strong>Leer más >></strong>
+                </summary>
+                <!-- <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Especializado en la gestión e inteligencia documental.</p>
                       <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Consultor en Procesos de negocio. Consultor senior en procesos de innovación en instituciones educativas de latinoamérica.</p>
                       <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Vasta trayectoria en instituciones universitarias de Argentina en funciones académicas y de gestión.</p> -->
-                      <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                      <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
 
-                    </details>
-                    <a href="#" class="btn btn-primary">LinkedIn <ion-icon name="logo-linkedin"></ion-icon></a>
-                  </div>
-                </div>
-                <div class="card-us wow animate__animated animate__bounceInUp">
-                  <div class="foto">
-                    <img class="card-img-top" src="/public/img/jose.webp" alt="foto José Ontivero" loading="lazy">
-                  </div>
-                  <h4 class="card-title">José Ontivero</h4>
-                  <div class="card-body">
-                    <p class="card-text">Amplia experiencia en funciones de liderazgo y gerenciamiento de equipos y proyectos.</p>
-                    <p class="card-text">Responsable de la operación y la implementación de proyectos tecnológicos en instituciones y empresas de educación, producción y de servicios.</p>            
-                    <details>
-                        <summary>
-                          <strong>Leer más >></strong>
-                        </summary>
-                        <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Especializado en la gestión e inteligencia documental.</p>
-                        <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Consultor en Procesos de negocio. Consultor senior en procesos de innovación en instituciones educativas de latinoamérica.</p>
-                        <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Vasta trayectoria en instituciones universitarias de Argentina en funciones académicas y de gestión.</p>
-                        <p class="card-text wow animate__animated animate__fadeInUp ">Formado en Sistemas y Tecnología, Management Estratético, Project Management, Administración de Empresas, Procesos.</p>
-                        <p class="card-text wow animate__animated animate__fadeInUp ">Es ordenado, metódico, con tendencia a automatizar y en la búsqueda constante de mejoras.</p>
+              </details>
+              <a href="#" class="btn btn-primary">LinkedIn <ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+          <div class="card-us wow animate__animated animate__bounceInUp">
+            <div class="foto">
+              <img class="card-img-top" src="/public/img/jose.webp" alt="foto José Ontivero" loading="lazy">
+            </div>
+            <h4 class="card-title">José Ontivero</h4>
+            <div class="card-body">
+              <p class="card-text">Amplia experiencia en funciones de liderazgo y gerenciamiento de equipos y proyectos.
+              </p>
+              <p class="card-text">Responsable de la operación y la implementación de proyectos tecnológicos en
+                instituciones y empresas de educación, producción y de servicios.</p>
+              <details>
+                <summary>
+                  <strong>Leer más >></strong>
+                </summary>
+                <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Especializado en la
+                  gestión e inteligencia documental.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Consultor en Procesos de
+                  negocio. Consultor senior en procesos de innovación en instituciones educativas de latinoamérica.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Vasta trayectoria en
+                  instituciones universitarias de Argentina en funciones académicas y de gestión.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp ">Formado en Sistemas y Tecnología,
+                  Management Estratético, Project Management, Administración de Empresas, Procesos.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp ">Es ordenado, metódico, con tendencia a
+                  automatizar y en la búsqueda constante de mejoras.</p>
 
-                      </details>
-                    <a href="https://www.linkedin.com/in/joseontivero/" class="btn btn-primary">LinkedIn <ion-icon name="logo-linkedin"></ion-icon></a>
-                  </div>
-                </div>
-                <div class="card-us wow animate__animated animate__bounceInUp">
-                  <img class="card-img-top" src="/public/img/usuario.jpeg" alt="Foto Marcelo Serrano" loading="lazy">
-                  <h4 class="card-title">Marcelo Serrano</h4>
-                  <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates.</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates ipsum dolor.</p>
-                    <details>
-                      <summary>
-                        <strong>Leer más >></strong>
-                      </summary>
-                      <!-- <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Especializado en la gestión e inteligencia documental.</p>
+              </details>
+              <a href="https://www.linkedin.com/in/joseontivero/" class="btn btn-primary">LinkedIn <ion-icon
+                  name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+          <div class="card-us wow animate__animated animate__bounceInUp">
+            <img class="card-img-top" src="/public/img/usuario.jpeg" alt="Foto Marcelo Serrano" loading="lazy">
+            <h4 class="card-title">Marcelo Serrano</h4>
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates.</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates ipsum dolor.</p>
+              <details>
+                <summary>
+                  <strong>Leer más >></strong>
+                </summary>
+                <!-- <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Especializado en la gestión e inteligencia documental.</p>
                       <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Consultor en Procesos de negocio. Consultor senior en procesos de innovación en instituciones educativas de latinoamérica.</p>
                       <p class="card-text wow animate__animated animate__fadeInUp animate__delay-1s">Vasta trayectoria en instituciones universitarias de Argentina en funciones académicas y de gestión.</p>
                       <p class="card-text wow animate__animated animate__fadeInUp ">Formado en Sistemas y Tecnología, Management Estratético, Project Management, Administración de Empresas, Procesos.</p>
                       <p class="card-text wow animate__animated animate__fadeInUp ">Es ordenado, metódico, con tendencia a automatizar y en la búsqueda constante de mejoras.</p> -->
-                      <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                      <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
 
-                    </details>
-                    <a href="https://www.linkedin.com/in/marcelo-serrano-311931b/" class="btn btn-primary">LinkedIn <ion-icon name="logo-linkedin"></ion-icon></a>
-                  </div>
-                </div>
-                <div class="card-us wow animate__animated animate__bounceInUp">
-                  <img class="card-img-top" src="/public/img/usuario.jpeg" alt="Foto Adrián Porta" loading="lazy">
-                  <h4 class="card-title">Adrián Porta</h4>
-                  <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates.</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates ipsum dolor.</p>
-                    <details>
-                      <summary>
-                        <strong>Leer más >></strong>
-                      </summary>                     
-                      <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-                      <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
-
-                    </details>
-                    <a href="https://www.linkedin.com/in/marcelo-serrano-311931b/" class="btn btn-primary">LinkedIn <ion-icon name="logo-linkedin"></ion-icon></a>
-                  </div>
-                </div>
-              </div>
-             
-                <h2 class="wow animate__animated animate__fadeInUp titulo_tecno">Las principales tecnologías que utilizamos  </h2>
-                <div class="tecno wow animate__animated animate__fadeInUp">                
-                  <div hidden class="logo_tecno ">
-                    <img src="/public/img/tecnos/css3.png" height="200" width="200" alt="">
-                  </div>
-                    <div class="logo_tecno">                   
-                        <span>JavaScript</span>
-                        <img src="/public/img/tecnos/js.png" height="200" width="200" alt="">                                 
-                    </div>
-                    <div class="logo_tecno">
-                      <span>NodeJS</span>
-                      <img src="/public/img/tecnos/node.png" height="200" width="200" alt="">
-                    </div>
-                    <div class="logo_tecno">    
-                      <span>API REST</span>               
-                      <img src="/public/img/tecnos/api_rest.png" height="200" width="200" alt="">
-                    </div>  
-                    <div class="logo_tecno">
-                      <span>Mongodb</span>
-                      <img src="/public/img/tecnos/mongo2.png" height="200" width="200" alt="">
-                    </div>                  
-                    <div class="logo_tecno">
-                      <span>AWS</span>
-                      <img src="/public/img/tecnos/asw.png" height="200" width="200" alt="">
-                    </div>  
-                    <div class="logo_tecno">
-                      <span>GitHub</span>
-                      <img src="/public/img/tecnos/github.png" height="200" width="200" alt="">
-                    </div>
-                    
-                </div>
-            
-              </div>
-              
-
-          </section>
-          <!-- -------------------------- seccion contacto --------------------------- -->
-          <section class="contacto" id="contacto">
-            
-            <div class="contenedor_formulario wow animate__animated animate__bounceInUp">
-              <form action="" class="formulario ">
-                <h2>Contacto</h2>
-                      <form-group class="inputs">
-                        <label for="nombre">Nombre Completo</label>
-                        <input type="text" name="nombre" class="form-control" placeholder="" required>
-                      </form-group>
-                      <form-group class="inputs">
-                        <label for="empresa">Empresa</label>
-                        <input type="text" name="empresa"class="form-control" placeholder="" required>                    </form-group>
-                      <form-group class="inputs">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" name="telefono" class="form-control"placeholder="" required>                      
-                      </form-group>
-                      <form-group class="inputs">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" name="email"class="form-control" placeholder="" required>
-                      </form-group>
-                      <form-group class="inputs">
-                        <label for="direccion">Dirección</label>                       
-                        <input type="text" name="direccion" id="direccion" class="form-control" placeholder="" required>
-                      </form-group>
-                      <form-group class="inputs">
-                        <label class="area" for="mensaje">Mensaje</label> <br>
-                        <textarea id="text-area" name="mensaje" rows="8" cols="50"></textarea>  
-                        <br>
-                        <a type="button" href="#" class="btn btn-primary btn_enviar">Enviar    <ion-icon name="send-outline"></ion-icon></a>
-                      </form-group>
-              </form>
-            </div>           
-            <div class="mapa wow animate__animated animate__fadeInUp">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6810.30648031307!2d-64.16183543319832!3d-31.40990380010442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2a8f022b917%3A0x7dfe9035a9e5e164!2sAv.%20Patria%20322%2C%20X5004%20CDQ%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1665111224890!5m2!1ses-419!2sar"
-                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </details>
+              <a href="https://www.linkedin.com/in/marcelo-serrano-311931b/" class="btn btn-primary">LinkedIn <ion-icon
+                  name="logo-linkedin"></ion-icon></a>
             </div>
-          </section>
-      
+          </div>
+          <div class="card-us wow animate__animated animate__bounceInUp">
+            <img class="card-img-top" src="/public/img/usuario.jpeg" alt="Foto Adrián Porta" loading="lazy">
+            <h4 class="card-title">Adrián Porta</h4>
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates.</p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias hic ea similique
+                voluptates ipsum dolor.</p>
+              <details>
+                <summary>
+                  <strong>Leer más >></strong>
+                </summary>
+                <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+                <p class="card-text wow animate__animated animate__fadeInUp ">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Alias hic ea similique voluptates dolor, consectetur dolore!.</p>
+
+              </details>
+              <a href="https://www.linkedin.com/in/marcelo-serrano-311931b/" class="btn btn-primary">LinkedIn <ion-icon
+                  name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="wow animate__animated animate__fadeInUp titulo_tecno">Las principales tecnologías que utilizamos
+        </h2>
+        <div class="tecno wow animate__animated animate__fadeInUp">
+         
+            <div class="logo_tecno">
+              <figure>
+                <span hidden>AWS</span>
+                <img src="/public/img/tecnos/asw.png" height="150" width="150" alt="">
+                <figcaption class="figure-caption">AWS</figcaption>
+              </figure>
+            </div>
+            <div class="logo_tecno">
+            <figure>
+              <span hidden>Mongodb</span>      
+              <img src="/public/img/tecnos/mongo2.png" height="150" width="150" alt="">
+              <figcaption class="figure-caption">Mongodb</figcaption>  
+            </figure>
+            </div>
+            <div class="logo_tecno ">
+             <figure>
+               <span hidden>Heroku</span>
+               <img src="/public/img/tecnos/heroku.png" height="150" width="150" alt="">
+               <figcaption class="figure-caption">Heroku</figcaption>
+             </figure>
+            </div>
+            <div class="logo_tecno">
+             <figure>
+               <span hidden>GitHub</span>
+               <img src="/public/img/tecnos/github.png" height="150" width="150" alt="">
+               <figcaption class="figure-caption">GitHub</figcaption>
+             </figure>
+            </div>
+         
+            <div class="logo_tecno">
+             <figure>
+               <span hidden>NodeJS</span>
+               <img src="/public/img/tecnos/node.png" height="150" width="150" alt="">
+               <figcaption class="figure-caption">NodeJS</figcaption>
+             </figure>
+            </div>
+            <div class="logo_tecno">
+             <figure>
+               <span hidden>JavaScript</span>
+               <img src="/public/img/tecnos/js.png" height="150" width="150" alt="">
+               <figcaption class="figure-caption">JavaScript</figcaption>
+             </figure>
+            </div>
+            <div class="logo_tecno">
+             <figure>
+               <span hidden>React</span>
+               <img src="/public/img/tecnos/react.png" height="150" width="150" alt="">
+               <figcaption class="figure-caption">ReactJS</figcaption>
+             </figure>
+            </div>
+            <div class="logo_tecno">
+             <figure>
+               <span hidden>API REST</span>
+               <img src="/public/img/tecnos/api_rest.png" height="150" width="150" alt="">
+               <figcaption class="figure-caption">API REST</figcaption>
+             </figure>
+            </div>
+        
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- -------------------------- seccion contacto --------------------------- -->
+    <section class="contacto" id="contacto">
+
+      <div class="contenedor_formulario wow animate__animated animate__bounceInUp">
+        <form action="" class="formulario ">
+          <h2>Contacto</h2>
+          <form-group class="inputs">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" name="nombre" class="form-control" placeholder="" required>
+          </form-group>
+          <form-group class="inputs">
+            <label for="empresa">Empresa</label>
+            <input type="text" name="empresa" class="form-control" placeholder="" required>
+          </form-group>
+          <form-group class="inputs">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" class="form-control" placeholder="" required>
+          </form-group>
+          <form-group class="inputs">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" class="form-control" placeholder="" required>
+          </form-group>
+          <form-group class="inputs">
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion" class="form-control" placeholder="" required>
+          </form-group>
+          <form-group class="inputs">
+            <label class="area" for="mensaje">Mensaje</label> <br>
+            <textarea id="text-area" name="mensaje" rows="8" cols="50"></textarea>
+            <br>
+            <a type="button" href="#" class="btn btn-primary btn_enviar">Enviar <ion-icon name="send-outline">
+              </ion-icon></a>
+          </form-group>
+        </form>
+      </div>
+      <div class="mapa wow animate__animated animate__fadeInUp">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6810.30648031307!2d-64.16183543319832!3d-31.40990380010442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2a8f022b917%3A0x7dfe9035a9e5e164!2sAv.%20Patria%20322%2C%20X5004%20CDQ%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1665111224890!5m2!1ses-419!2sar"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
   </main>
-  <footer>    
+  <footer>
     <div class="direccion">
-      <address>        
-        <p> <ion-icon name="home-outline"></ion-icon>  Argentina, Córdoba Capital <br>
-        Av. Patria 322, X5004 CDQ, <br> Barrio Gral Paz</p>    
+      <address>
+        <p>
+          <ion-icon name="home-outline"></ion-icon> Argentina, Córdoba Capital <br>
+          Av. Patria 322, X5004 CDQ, <br> Barrio Gral Paz
+        </p>
       </address>
-    </div> 
+    </div>
 
     <div class="barra-nav_footer">
       <ul class="d-flex flex-column justify-content-center m-4">
@@ -371,46 +453,60 @@
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
-    
+
     <div class="redes_sociales">
-       <div class="linkedin"> <a href="https://www.linkedin.com/company/sinergy-ogs/"><ion-icon name="logo-linkedin"></ion-icon></a></div> 
-      <div class="instagram"><ion-icon name="logo-instagram"></ion-icon></div>
-      <div class="twitter"><ion-icon name="logo-twitter"></ion-icon></div>
-      <div class="facebook"><ion-icon name="logo-facebook"></ion-icon></div>
+      <div class="linkedin"> <a href="https://www.linkedin.com/company/sinergy-ogs/">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></div>
+      <div class="instagram"><a href="https://www.instagram.com/"></a>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
+      <div class="twitter"><a href="https://twitter.com/"></a>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </div>
+      <div class="facebook"><a href="https://es-la.facebook.com/"></a>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </div>
     </div>
-  
+
     <div class="derechos">
-     <p>© Copyright Sinergy OGS. All Rights Reserved -  <img src="public/img/logo_full_sinergy_ogs.png" alt="Logo Sinergy OGS" loading="lazy"></p>
-    </div> 
+      <p>© Copyright Sinergy OGS. All Rights Reserved - <img src="public/img/logo_full_sinergy_ogs.png"
+          alt="Logo Sinergy OGS" loading="lazy"></p>
+    </div>
   </footer>
 
 
-    <script src="/public/js/btnUp.js"></script>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <!-- ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- parallax -->
-    <!--   <script src="/public/js/scroll_parallax.js"></script> -->
-  
-    <!-- wow animate -->
-    <script src="/public/js/wow.min.js"></script>
-    <script>
-      wow = new WOW(
-                        {
-                        boxClass:     'wow',      // default
-                        animateClass: 'animated', // default
-                        offset:       0,          // default
-                        mobile:       true,       // default
-                        live:         true        // default
-                      }
-                      )
-                      wow.init();
-    </script>
-    <!-- scroll reveal -->
-    <!--  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="/public/js/btnUp.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- parallax -->
+  <!--   <script src="/public/js/scroll_parallax.js"></script> -->
+
+  <!-- wow animate -->
+  <script src="/public/js/wow.min.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        boxClass: 'wow',      // default
+        animateClass: 'animated', // default
+        offset: 0,          // default
+        mobile: true,       // default
+        live: true        // default
+      }
+    )
+    wow.init();
+  </script>
+  <!-- scroll reveal -->
+  <!--  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="/public/js/scroolReveal.js"></script>   -->
 </body>
+
 </html>

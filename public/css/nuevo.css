@@ -592,21 +592,36 @@ summary::marker {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
   justify-content: center;
-  gap: 2em;
+  align-items: center;
+  gap: 4em;
+
 }
 
-.logo_tecno {
+.logo_tecno .figure-caption{
+  text-align: center;
+  margin: 0 auto;
+  visibility: hidden;
+ 
+}
+figure:hover .figure-caption{
+  visibility: visible;
+
+}
+/* .logo_tecno {
   filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
+} */
+.logo_tecno img{
+  filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+  border-radius: 50% !important;
 }
-
 .logo_tecno span {
   display: none;
   text-align: center;
 }
 
-.logo_tecno:before,
+/* .logo_tecno:before,
 .logo_tecno:after {
   z-index: -1;
   position: absolute;
@@ -625,9 +640,9 @@ summary::marker {
   -o-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
-}
+} */
 
-.logo_tecno:after {
+/* .logo_tecno:after {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
   -o-transform: rotate(3deg);
@@ -636,22 +651,23 @@ summary::marker {
   right: 10px;
   left: auto;
 }
-
-.logo_tecno:hover {
+ */
+/* .logo_tecno:hover {
   animation: shake_ .85s ease-in-out;
 }
-
-.logo_tecno:hover span {
+ */
+/* .logo_tecno:hover span {
   display: inline;
   z-index: 100;
   position: absolute;
-  width: 50%;
-  margin-top: 88%;
-  transform: translateX(50px);
+  width: auto;
+  margin-top: 90%;
+  transform: translateX(45px);
   background-color: rgba(0, 0, 0, 0.81);
   color: white;
   font-weight: 700;
-}
+  box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
+} */
 
 /* -------------------------- fin seccion nosotros -------------------------- */
 /* ---------------------------- seccion contacto ---------------------------- */
@@ -1096,56 +1112,76 @@ footer .redes_sociales ion-icon {
     justify-self: flex-end !important;
 
   }
-
   .tecno {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     justify-content: center;
-    gap: 2em;
+    align-items: center;
+    gap: 1em;
+  
   }
+  
+/* .logo_tecno {
+  filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
+} */
+.logo_tecno img{
+  filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+  border-radius: 50% !important;
+}
+.logo_tecno span {
+  display: none;
+  text-align: center;
+}
 
-  .logo_tecno {
-    border-radius: .5em;
-    position: relative;
-  }
+/* .logo_tecno:before,
+.logo_tecno:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+} */
 
-  .logo_tecno:before,
-  .logo_tecno:after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width: 300px;
-    background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-  }
+/* .logo_tecno:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+ */
+.logo_tecno:hover {
+  animation: shake_ .85s ease-in-out;
+}
 
-  .logo_tecno:after {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto;
-  }
-
-  .logo_tecno:hover {
-    animation: shake_ .8s ease-in-out;
-  }
-
+.logo_tecno:hover span {
+  display: inline;
+  z-index: 100;
+  position: absolute;
+  width: 50%;
+  margin-top: 90%;
+  transform: translateX(50px);
+  background-color: rgba(0, 0, 0, 0.81);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
+}
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
     display: flex;
@@ -1446,54 +1482,77 @@ footer .redes_sociales ion-icon {
 
   }
 
+  
   .tecno {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 45%;
     justify-content: center;
-    gap: 2em;
+    align-items: center;
+    gap: 1em;
+  
   }
+  
+/* .logo_tecno {
+  filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
+} */
+.logo_tecno img{
+  filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+  border-radius: 50% !important;
+}
+.logo_tecno span {
+  display: none;
+  text-align: center;
+}
 
-  .logo_tecno {
-    border-radius: .5em;
-    position: relative;
-  }
+/* .logo_tecno:before,
+.logo_tecno:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+} */
 
-  .logo_tecno:before,
-  .logo_tecno:after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width: 300px;
-    background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-  }
+/* .logo_tecno:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+ */
+.logo_tecno:hover {
+  animation: shake_ .85s ease-in-out;
+}
 
-  .logo_tecno:after {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto;
-  }
-
-  .logo_tecno:hover {
-    animation: shake_ .8s ease-in-out;
-  }
+.logo_tecno:hover span {
+  display: inline;
+  z-index: 100;
+  position: absolute;
+  width: 50%;
+  margin-top: 90%;
+  transform: translateX(50px);
+  background-color: rgba(0, 0, 0, 0.81);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
+}
 
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
@@ -1805,17 +1864,27 @@ footer .redes_sociales ion-icon {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 45%;
     justify-content: center;
-    gap: 2em;
+    align-items: center;
+    gap: 1em;
+  
   }
-
-  .logo_tecno {
-    border-radius: .5em;
-    position: relative;
+  
+  
+  /* .logo_tecno {
+    filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
+  } */
+  .logo_tecno img{
+    filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+    border-radius: 50% !important;
   }
-
-  .logo_tecno:before,
+  .logo_tecno span {
+    display: none;
+    text-align: center;
+  }
+  
+  /* .logo_tecno:before,
   .logo_tecno:after {
     z-index: -1;
     position: absolute;
@@ -1834,9 +1903,9 @@ footer .redes_sociales ion-icon {
     -o-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
-  }
-
-  .logo_tecno:after {
+  } */
+  
+  /* .logo_tecno:after {
     -webkit-transform: rotate(3deg);
     -moz-transform: rotate(3deg);
     -o-transform: rotate(3deg);
@@ -1845,9 +1914,22 @@ footer .redes_sociales ion-icon {
     right: 10px;
     left: auto;
   }
-
+   */
   .logo_tecno:hover {
-    animation: shake_ .8s ease-in-out;
+    animation: shake_ .85s ease-in-out;
+  }
+  
+  .logo_tecno:hover span {
+    display: inline;
+    z-index: 100;
+    position: absolute;
+    width: 50%;
+    margin-top: 90%;
+    transform: translateX(50px);
+    background-color: rgba(0, 0, 0, 0.81);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
   }
 
   /* -------------------------------- contacto -------------------------------- */
@@ -2157,17 +2239,27 @@ footer .redes_sociales ion-icon {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     justify-content: center;
-    gap: 2em;
+    align-items: center;
+    gap: 1em;
+  
   }
-
-  .logo_tecno {
-    border-radius: .5em;
-    position: relative;
+  
+  
+  /* .logo_tecno {
+    filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
+  } */
+  .logo_tecno img{
+    filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+    border-radius: 50% !important;
   }
-
-  .logo_tecno:before,
+  .logo_tecno span {
+    display: none;
+    text-align: center;
+  }
+  
+  /* .logo_tecno:before,
   .logo_tecno:after {
     z-index: -1;
     position: absolute;
@@ -2186,9 +2278,9 @@ footer .redes_sociales ion-icon {
     -o-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
-  }
-
-  .logo_tecno:after {
+  } */
+  
+  /* .logo_tecno:after {
     -webkit-transform: rotate(3deg);
     -moz-transform: rotate(3deg);
     -o-transform: rotate(3deg);
@@ -2197,11 +2289,23 @@ footer .redes_sociales ion-icon {
     right: 10px;
     left: auto;
   }
-
+   */
   .logo_tecno:hover {
-    animation: shake_ .8s ease-in-out;
+    animation: shake_ .85s ease-in-out;
   }
-
+  
+  .logo_tecno:hover span {
+    display: inline;
+    z-index: 100;
+    position: absolute;
+    width: 50%;
+    margin-top: 90%;
+    transform: translateX(50px);
+    background-color: rgba(0, 0, 0, 0.81);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
+  }
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
     display: flex;
