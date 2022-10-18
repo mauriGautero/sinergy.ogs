@@ -595,79 +595,37 @@ summary::marker {
   width: 50%;
   justify-content: center;
   align-items: center;
-  gap: 4em;
-
+  gap: 2em;
+  margin-top: 2em ;
 }
-
+.logo_tecno{
+  padding: 10px;
+}
 .logo_tecno .figure-caption{
   text-align: center;
   margin: 0 auto;
   visibility: hidden;
  
 }
+.logo_tecno:hover img{
+  animation: shake_ 4s ease infinite;
+}
+figure{
+  width: 150px;
+  height: 150px;
+}
 figure:hover .figure-caption{
   visibility: visible;
-
+  animation: shake_ 4s ease infinite;
+ -moz-animation:shake_ 4s ease infinite;
+ -webkit-animation: shake_ 4s ease infinite;;
 }
-/* .logo_tecno {
-  filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
-} */
+
 .logo_tecno img{
   filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
   border-radius: 50% !important;
 }
-.logo_tecno span {
-  display: none;
-  text-align: center;
-}
 
-/* .logo_tecno:before,
-.logo_tecno:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-} */
-
-/* .logo_tecno:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
- */
-/* .logo_tecno:hover {
-  animation: shake_ .85s ease-in-out;
-}
- */
-/* .logo_tecno:hover span {
-  display: inline;
-  z-index: 100;
-  position: absolute;
-  width: auto;
-  margin-top: 90%;
-  transform: translateX(45px);
-  background-color: rgba(0, 0, 0, 0.81);
-  color: white;
-  font-weight: 700;
-  box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
-} */
 
 /* -------------------------- fin seccion nosotros -------------------------- */
 /* ---------------------------- seccion contacto ---------------------------- */
@@ -744,8 +702,9 @@ input[type]:focus {
 }
 
 .inputs #text-area {
-  border: 1px solid rgba(4, 2, 2, 0.673) !important;
+  border: 1px solid rgba(103, 101, 101, 0.673) !important;
   outline-offset: 0 !important;
+  border-radius: .5em;
 }
 
 .btn_enviar {
@@ -755,6 +714,7 @@ input[type]:focus {
 
 .btn_enviar ion-icon {
   vertical-align: text-bottom;
+  margin-left: .5em;
 }
 
 .btn_enviar:hover {
@@ -885,7 +845,7 @@ footer .redes_sociales ion-icon {
 /*                               MODO RESPONSIVE                              */
 /* -------------------------------------------------------------------------- */
 
-@media all and (min-width:380px) and (max-width: 478px) {
+@media all and (min-width:350px) and (max-width: 478px) {
   .navbar-brand {
     margin-left: 0 !important;
   }
@@ -1120,68 +1080,33 @@ footer .redes_sociales ion-icon {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    margin-top: 2em;
   
   }
+  .logo_tecno{
+    padding: 5px;
+  }
   
-/* .logo_tecno {
-  filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
-} */
+.logo_tecno .figure-caption{
+  text-align: center;
+  margin: 0 auto;
+  visibility: hidden;
+ 
+}
+.logo_tecno:hover img{
+  animation: shake_ 4s ease infinite;
+}
+figure:hover .figure-caption{
+  visibility: visible;
+  animation: shake_ 4s ease infinite;
+
+}
+
 .logo_tecno img{
   filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
   border-radius: 50% !important;
 }
-.logo_tecno span {
-  display: none;
-  text-align: center;
-}
 
-/* .logo_tecno:before,
-.logo_tecno:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-} */
-
-/* .logo_tecno:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
- */
-.logo_tecno:hover {
-  animation: shake_ .85s ease-in-out;
-}
-
-.logo_tecno:hover span {
-  display: inline;
-  z-index: 100;
-  position: absolute;
-  width: 50%;
-  margin-top: 90%;
-  transform: translateX(50px);
-  background-color: rgba(0, 0, 0, 0.81);
-  color: white;
-  font-weight: 700;
-  box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
-}
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
     display: flex;
@@ -1235,10 +1160,10 @@ footer .redes_sociales ion-icon {
   }
 
   .inputs #text-area {
-    border: 1px solid rgba(4, 2, 2, 0.673) !important;
+    border: 1px solid rgba(96, 95, 95, 0.673) !important;
     outline-offset: 0 !important;
+    border-radius: .5em !important;
     width: 100% !important;
-
   }
 
   footer .direccion {
@@ -1491,67 +1416,29 @@ footer .redes_sociales ion-icon {
     justify-content: center;
     align-items: center;
     gap: 1em;
-  
+    margin-top: 2em;
   }
-  
-/* .logo_tecno {
-  filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
-} */
+  .logo_tecno{
+    padding: 5px;
+  }
+.logo_tecno .figure-caption{
+  text-align: center;
+  margin: 0 auto;
+  visibility: hidden;
+ 
+}
+.logo_tecno:hover img{
+  animation: shake_ 4s ease infinite;
+}
+figure:hover .figure-caption{
+  visibility: visible;
+  animation: shake_ 4s ease infinite;
+
+}
+
 .logo_tecno img{
   filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
   border-radius: 50% !important;
-}
-.logo_tecno span {
-  display: none;
-  text-align: center;
-}
-
-/* .logo_tecno:before,
-.logo_tecno:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-} */
-
-/* .logo_tecno:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
- */
-.logo_tecno:hover {
-  animation: shake_ .85s ease-in-out;
-}
-
-.logo_tecno:hover span {
-  display: inline;
-  z-index: 100;
-  position: absolute;
-  width: 50%;
-  margin-top: 90%;
-  transform: translateX(50px);
-  background-color: rgba(0, 0, 0, 0.81);
-  color: white;
-  font-weight: 700;
-  box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
 }
 
   /* -------------------------------- contacto -------------------------------- */
@@ -1607,10 +1494,10 @@ footer .redes_sociales ion-icon {
   }
 
   .inputs #text-area {
-    border: 1px solid rgba(4, 2, 2, 0.673) !important;
+    border: 1px solid rgba(96, 95, 95, 0.673) !important;
     outline-offset: 0 !important;
+    border-radius: .5em !important;
     width: 100% !important;
-
   }
 
   footer .direccion {
@@ -1868,69 +1755,32 @@ footer .redes_sociales ion-icon {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    margin-top: 2em;
+  
+  }
+  .logo_tecno{
+    padding: 10px;
+  }
+  .logo_tecno .figure-caption{
+    text-align: center;
+    margin: 0 auto;
+    visibility: hidden;
+   
+  }
+  .logo_tecno:hover img{
+    animation: shake_ 4s ease infinite;
+  }
+  figure:hover .figure-caption{
+    visibility: visible;
+    animation: shake_ 4s ease infinite;
   
   }
   
-  
-  /* .logo_tecno {
-    filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
-  } */
   .logo_tecno img{
     filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
     border-radius: 50% !important;
   }
-  .logo_tecno span {
-    display: none;
-    text-align: center;
-  }
   
-  /* .logo_tecno:before,
-  .logo_tecno:after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width: 300px;
-    background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-  } */
-  
-  /* .logo_tecno:after {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto;
-  }
-   */
-  .logo_tecno:hover {
-    animation: shake_ .85s ease-in-out;
-  }
-  
-  .logo_tecno:hover span {
-    display: inline;
-    z-index: 100;
-    position: absolute;
-    width: 50%;
-    margin-top: 90%;
-    transform: translateX(50px);
-    background-color: rgba(0, 0, 0, 0.81);
-    color: white;
-    font-weight: 700;
-    box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
-  }
 
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
@@ -1985,10 +1835,10 @@ footer .redes_sociales ion-icon {
   }
 
   .inputs #text-area {
-    border: 1px solid rgba(4, 2, 2, 0.673) !important;
+    border: 1px solid rgba(96, 95, 95, 0.673) !important;
     outline-offset: 0 !important;
+    border-radius: .5em !important;
     width: 100% !important;
-
   }
 
   footer .direccion {
@@ -2243,69 +2093,32 @@ footer .redes_sociales ion-icon {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    margin-top: 2em;
   
   }
-  
-  
-  /* .logo_tecno {
-    filter: drop-shadow(0px 0px 40px rgba(214, 212, 212, 0.475));
-  } */
-  .logo_tecno img{
-    filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
-    border-radius: 50% !important;
-  }
-  .logo_tecno span {
-    display: none;
-    text-align: center;
+  .logo_tecno{
+    padding: 10px;
   }
   
-  /* .logo_tecno:before,
-  .logo_tecno:after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width: 300px;
-    background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-  } */
-  
-  /* .logo_tecno:after {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto;
-  }
-   */
-  .logo_tecno:hover {
-    animation: shake_ .85s ease-in-out;
-  }
-  
-  .logo_tecno:hover span {
-    display: inline;
-    z-index: 100;
-    position: absolute;
-    width: 50%;
-    margin-top: 90%;
-    transform: translateX(50px);
-    background-color: rgba(0, 0, 0, 0.81);
-    color: white;
-    font-weight: 700;
-    box-shadow: 0px 5px 16px rgba(69, 68, 68, 0.728);
-  }
+.logo_tecno .figure-caption{
+  text-align: center;
+  margin: 0 auto;
+  visibility: hidden;
+ 
+}
+.logo_tecno:hover img{
+  animation: shake_ 4s ease infinite;
+}
+figure:hover .figure-caption{
+  visibility: visible;
+  animation: shake_ 4s ease infinite;
+
+}
+
+.logo_tecno img{
+  filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+  border-radius: 50% !important;
+}
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
     display: flex;
@@ -2359,8 +2172,9 @@ footer .redes_sociales ion-icon {
   }
 
   .inputs #text-area {
-    border: 1px solid rgba(4, 2, 2, 0.673) !important;
+    border: 1px solid rgba(96, 95, 95, 0.673) !important;
     outline-offset: 0 !important;
+    border-radius: .5em !important;
     width: 100% !important;
 
   }
