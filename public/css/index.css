@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -503,7 +502,7 @@ footer {
   font-family: 'Roboto';
   bottom: auto;
   width: 100%;
-  height: 40vh;
+ /*  height: 40vh; */
   color: whitesmoke;
   background-color: black ;
   /* background-image: url('/public/img/wave_footer.svg'); */
