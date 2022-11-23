@@ -320,6 +320,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 30vh;  
   align-items: center;
   box-shadow: -2px 5px 12px rgba(89, 88, 88, 0.452);
 }
@@ -332,6 +333,7 @@ section {
 
 .card .card-body {
   width: 18em;
+  overflow-y:scroll ;
 }
 
 .card-body .card-title {
@@ -344,7 +346,10 @@ section {
   padding: 5px;
   /*  filter: drop-shadow(-2px 5px 2px rgba(70, 69, 69, 0.353)); */
 }
-
+.card-body .card-text{
+  padding: 8px;
+  padding-top: 0px;
+}
 .contenedor_carrucel {
   margin-top: 2em;
   display: flex;
@@ -581,7 +586,7 @@ summary::marker {
 .card-us .card-body {
   overflow-y: scroll;
 }
-
+/* ------------------------------- Tecnologias ------------------------------ */
 .titulo_tecno {
   margin-top: 2em;
   width: 80%;
@@ -629,14 +634,12 @@ figure:hover .figure-caption{
 }
 
 
-
-
 /* -------------------------- fin seccion nosotros -------------------------- */
 /* ---------------------------- seccion contacto ---------------------------- */
 
 .contacto {
   margin-top: 4em;
-  width: 100%;
+ /*  width: 100%; */
   height: auto;
   min-height: 100%;
   display: flex;
@@ -646,7 +649,7 @@ figure:hover .figure-caption{
 }
 
 .contenedor_formulario {
-  width: 50vw;
+  width: 100%;
   /* height: 50em; */
   padding: 5em;
   margin: 2em !important;
@@ -655,7 +658,7 @@ figure:hover .figure-caption{
   border-radius: .5em;
 }
 
-.mapa iframe {
+/* .mapa iframe {
   margin-top: .5em;
   margin-bottom: 1em;
   width: 500px !important;
@@ -663,7 +666,7 @@ figure:hover .figure-caption{
   filter: drop-shadow(2px 5px 10px rgba(77, 76, 76, 0.466));
   border-radius: .5em;
 }
-
+ */
 .formulario h2 {
   color: rgb(32, 30, 30);
   margin-bottom: 2em;
@@ -676,7 +679,6 @@ input.form-control:focus {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
-
 }
 
 .area {
