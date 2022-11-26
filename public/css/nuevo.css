@@ -2258,6 +2258,8 @@ footer .redes_sociales ion-icon {
   width: 100%;
   color:#121c09;
   background-color: #aaf170;
+  border-radius: .5em;
+  padding-left: 25px;
 }
 .text_back p:hover {
   transform: scale(1.05);
