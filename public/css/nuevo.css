@@ -488,126 +488,142 @@ section {
   margin-bottom: 1.5em;
 }
 
-.card-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.8em;
+/* --------------------------------- prueba card perfil 3D--------------------------------- */
+
+.card-3d {
+  min-width: 410px; /*400px*/
+  min-height: 500px; /*450px*/
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  transform-style: preserve-3d;
+  border-radius: 0.5em;
   box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
+  background-color: whitesmoke;
+
 }
 
-/* summary strong,
-summary::marker {
-  color: var(--azul) !important;
-}
- */
-
-.botones_perfil {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 0.5em;
-}
-#bt_ver,
-#linkedin {
-  background-color: #f6e3e3;
+.side {
+  position: absolute;
+  text-align: center;
   width: 100%;
-  display: inline;
+  height: 100%;
+  padding: 2px 2px;
+  color: rgb(24, 23, 23);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 20px;
+   
+  
 }
-
-.servicios_presentacion p {
-  width: 100% !important;
+.content-3d {
+  transform: translatez(70px) scale(0.8);
+  line-height: 1.5em;
 }
-
-.card-us .card-body {
-  width: 20em;
-  height: 5em;
-  /*   overflow-y: hidden; */
+.content-3d h1 {
+  position: relative;
 }
-
-.card-us .card-title {
-  margin-top: 0.2em;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-align: center !important;
+.content-3d p {
+  margin-top: -8px;
+  line-height: 2em;
 }
-
-.card-us .card-text {
-  text-align: center center;
-  justify-content: center;
-  visibility: hidden;
+.content-3d h1:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  height: 3px;
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-.card-us .card-img-top {
-  margin-top: 0.5em;
-  width: 10em;
-  padding: 5px;
+.content-3d .card-img-top {
+  width: 16em;
+  padding: 2px;
+  margin-bottom: 1em;
   border-radius: 50%;
   filter: grayscale(1);
+  box-shadow: 0px 5px 12px rgb(195, 192, 192);
 }
 
-.card-us .card-body ion-icon {
-  margin-left: 35% !important;
-  justify-self: flex-end !important;
+.front {
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+  background-color: white;
+  
+}
+.back {
+  transform: rotateY(180deg);
+  z-index: 0;
+  padding-top: 1px;
+  background-color: white;
+}
+.front h4 {
+  color: #1bba40;
+}
+.front h5 {
+  color: #1bba40;
+}
+.front p {
+  font-size: 1.2em;
+  color: #000000;
+}
+.card-3d:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  transition: all 1.4s ease-in-out;
+}
+.text_back {
+  text-align: left;
+  color: #101111;
+}
+.text_back p {
+  font-size: 1.1em;
+  width: 100%;
+  color:#121c09;
+  background-color: #aaf170;
+  border-radius: .5em;
+  padding-left: 25px;
+}
+.text_back p:hover {
+  transform: scale(1.05);
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.text_back ul {
+  padding-left: 0.2rem;
+}
+.text_back li {
+  list-style-type: disc;
+}
+.text_back li::marker {
+  color: #3c5823;
+  font-size: 2em;
+}
+.back h1 {
+  margin: 0;
+}
+.back {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.back #linkdin {
+  width: 100%;
+  top: 450px;
+  text-align: center;
+}
+.back #linkdin ion-icon {
+  font-size: 54px;
+  bottom: 0;
+}
+.back #linkdin:hover ion-icon {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  filter: drop-shadow(2px 5px 2px rgba(68, 67, 67, 0.573));
 }
 
-.card-us .card-body ion-icon {
-  vertical-align: middle;
-  margin-top: 0.3em;
-  font-size: 1.5em;
-}
-
-.card-us .card-body .btn-primary:hover {
-  filter: drop-shadow(5px 5px 4px rgba(169, 168, 168, 0.645));
-}
-.perfil_descripcion {
-  visibility: hidden !important;
-}
-.card-us .card-body #bt_ver:hover .perfil_descripcion {
-  height: 11em;
-  transform: translateY(30px);
-  transition-delay: 1.2s;
-  transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
-  opacity: 1;
-  background-color: #1abc9c;
-  visibility: visible;
-  cursor: pointer;
-}
-
-@keyframes shake_linkedin {
-  0% {
-    transform: translateX(-2px);
-  }
-
-  25% {
-    transform: translateX(2px);
-  }
-
-  100% {
-    transform: translateX(-2px);
-  }
-}
-
-.card-us .card-body a:hover ion-icon {
-  animation: shake_linkedin 1.2s ease infinite;
-}
-
-/* .card-us .card-body::-webkit-scrollbar {
-  width: 4px;
-  height: 2px;
-
-}
-
-.card-us .card-body::-webkit-scrollbar-thumb {
-  background-color: #35d1b29a !important;
-}
-
-.card-us .card-body {
-  overflow-y: scroll;
-} */
 
 /* ------------------------------- Tecnologias ------------------------------ */
 .titulo_tecno {
@@ -1043,52 +1059,146 @@ footer .redes_sociales ion-icon {
     width: 100%;
   }
 
-  summary strong,
+/*   summary strong,
   summary::marker {
     color: var(--azul) !important;
-  }
+  } */
 
-  .card-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .card-3d {
+    min-width: 350px; /*400px*/
+    min-height: 610px; /*450px*/
+    border-radius: 20px;
+    position: relative;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+    transform-style: preserve-3d;
     border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
-    margin-bottom: 2em;
+    background-color: white;
+  
   }
-
-  .card-us .card-img-top {
-    margin-top: 0.5em;
-    width: 8em;
+  
+  .side {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 2px 2px;
+    color: rgb(24, 23, 23);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 20px;
+     
+    
+  }
+  .content-3d {
+    transform: translatez(70px) scale(0.8);
+    line-height: 1.5em;
+  }
+  .content-3d h1 {
+    position: relative;
+  }
+  .content-3d p {
+    margin-top: -8px;
+    line-height: 2em;
+  }
+  .content-3d h1:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    height: 3px;
+    width: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .content-3d .card-img-top {
+    width: 16em;
     padding: 2px;
+    margin-bottom: 1em;
     border-radius: 50%;
     filter: grayscale(1);
+    box-shadow: 0px 5px 12px rgb(195, 192, 192);
   }
-
-  .card-us .card-title {
-    margin-top: 0.2em;
-    font-size: 1.5em;
-    font-weight: 400;
-    text-align: center !important;
+  
+  .front {
+    z-index: 2;
+    background-size: 100vh;
+    background-size: cover;
+    background-color: white;
+    
   }
-
-  .card-us .card-body {
-    width: 20em;
-    height: 20em;
-    overflow-y: scroll;
+  .back {
+    transform: rotateY(180deg);
+    z-index: 0;
+    padding-top: 1px;
+    background-color: white;
   }
-
-  .card-us .card-text {
+  .front h4 {
+    color: #1bba40;
+  }
+  .front h5 {
+    color: #1bba40;
+  }
+  .front p {
+    font-size: 1.2em;
+    color: #000000;
+  }
+  .card-3d:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    transition: all 1.4s ease-in-out;
+  }
+  .text_back {
+    text-align: left;
+    color: #101111;
+  }
+  .text_back p {
+    font-size: 1.1em;
     width: 100%;
-    padding-left: 2px;
+    color:#121c09;
+    background-color: #aaf170;
+    border-radius: .5em;
+    padding-left: 25px;
   }
-
-  .card-us .card-body .btn-primary {
-    width: 8em;
-    margin-left: 10em !important;
-    justify-self: flex-end !important;
+  .text_back p:hover {
+    transform: scale(1.05);
+    color: black;
+    transition: all 0.2s ease-in-out;
   }
+  .text_back ul {
+    padding-left: 0.2rem;
+  }
+  .text_back li {
+    list-style-type: disc;
+  }
+  .text_back li::marker {
+    color: #3c5823;
+    font-size: 2em;
+  }
+  .back h1 {
+    margin: 0;
+  }
+  .back {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .back #linkdin {
+    width: 100%;
+    top: 450px;
+    text-align: center;
+  }
+  .back #linkdin ion-icon {
+    font-size: 54px;
+    bottom: 0;
+  }
+  .back #linkdin:hover ion-icon {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    filter: drop-shadow(2px 5px 2px rgba(68, 67, 67, 0.573));
+  }
+  
+  
   .tecno {
     display: flex;
     flex-direction: row;
@@ -1357,52 +1467,18 @@ footer .redes_sociales ion-icon {
   .nosotros {
     width: 100%;
   }
-
-  summary strong,
-  summary::marker {
-    color: var(--azul) !important;
-  }
-
-  .card-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .card-3d {
+    min-width: 350px; /*400px*/
+    min-height: 610px; /*450px*/
+    border-radius: 20px;
+    position: relative;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+    transform-style: preserve-3d;
     border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
-    margin-bottom: 2em;
-  }
-
-  .card-us .card-img-top {
-    margin-top: 0.5em;
-    width: 8em;
-    padding: 2px;
-    border-radius: 50%;
-    filter: grayscale(1);
-  }
-
-  .card-us .card-title {
-    margin-top: 0.2em;
-    font-size: 1.5em;
-    font-weight: 400;
-    text-align: center !important;
-  }
-
-  .card-us .card-body {
-    width: 20em;
-    height: 20em;
-    overflow-y: scroll;
-  }
-
-  .card-us .card-text {
-    width: 100%;
-    padding-left: 2px;
-  }
-
-  .card-us .card-body .btn-primary {
-    width: 8em;
-    margin-left: 10em !important;
-    justify-self: flex-end !important;
+    background-color: white;
+  
   }
 
   .tecno {
@@ -1672,11 +1748,11 @@ footer .redes_sociales ion-icon {
   .nosotros {
     width: 100%;
   }
-
+/* 
   summary strong,
   summary::marker {
     color: var(--azul) !important;
-  }
+  } */
 
   .cards-nosotros {
     display: flex;
@@ -1687,49 +1763,19 @@ footer .redes_sociales ion-icon {
     width: 90vw;
     margin-bottom: 1.5em;
   }
-
-  .card-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .card-3d {
+    min-width: 350px; /*400px*/
+    min-height: 600px; /*450px*/
+    border-radius: 20px;
+    position: relative;
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+    transform-style: preserve-3d;
     border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
-    margin-bottom: 2em;
+    background-color: white;
+  
   }
-
-  .card-us .card-img-top {
-    margin-top: 0.5em;
-    width: 8em;
-    padding: 2px;
-    border-radius: 50%;
-    filter: grayscale(1);
-  }
-
-  .card-us .card-title {
-    margin-top: 0.2em;
-    font-size: 1.5em;
-    font-weight: 400;
-    text-align: center !important;
-  }
-
-  .card-us .card-body {
-    width: 20em;
-    height: 20em;
-    overflow-y: scroll;
-  }
-
-  .card-us .card-text {
-    width: 100%;
-    padding-left: 2px;
-  }
-
-  .card-us .card-body .btn-primary {
-    width: 8em;
-    margin-left: 10em !important;
-    justify-self: flex-end !important;
-  }
-
   .tecno {
     display: flex;
     flex-direction: row;
@@ -2167,134 +2213,129 @@ footer .redes_sociales ion-icon {
   }
 }
 
-/* --------------------------------- prueba card perfil 3D--------------------------------- */
+/*
 
-.card-3d {
-  min-width: 410px; /*400px*/
-  min-height: 500px; /*450px*/
-  border-radius: 20px;
-  position: relative;
-  -webkit-transition: 1.5s ease-in-out;
-  transition: 1.5s ease-in-out;
-  transform-style: preserve-3d;
-  border-radius: 0.5em;
+.card-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8em;
   box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
-  background-color: whitesmoke;
 }
 
-.side {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  padding: 2px 2px;
-  color: rgb(24, 23, 23);
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-  border-radius: 20px;
+summary strong,
+summary::marker {
+  color: var(--azul) !important;
 }
-.content-3d {
-  transform: translatez(70px) scale(0.8);
-  line-height: 1.5em;
-}
-.content-3d h1 {
-  position: relative;
-}
-.content-3d p {
-  margin-top: -8px;
-  line-height: 2em;
-}
-.content-3d h1:before {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  height: 3px;
-  width: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.content-3d .card-img-top {
-  width: 16em;
-  padding: 2px;
-  margin-bottom: 1em;
-  border-radius: 50%;
-  filter: grayscale(1);
-  box-shadow: 0px 5px 12px rgb(195, 192, 192);
-}
+ 
 
-.front {
-  z-index: 2;
-  background-size: 100vh;
-  background-size: cover;
-  background-color: white;
-}
-.back {
-  transform: rotateY(180deg);
-  z-index: 0;
-  padding-top: 1px;
-  background-color: white;
-}
-.front h4 {
-  color: #1bba40;
-}
-.front h5 {
-  color: #1bba40;
-}
-.front p {
-  font-size: 1.2em;
-  color: #000000;
-}
-.card-3d:hover {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  transition: all 1.4s ease-in-out;
-}
-.text_back {
-  text-align: left;
-  color: #101111;
-}
-.text_back p {
-  font-size: 1.1em;
-  width: 100%;
-  color:#121c09;
-  background-color: #aaf170;
-  border-radius: .5em;
-  padding-left: 25px;
-}
-.text_back p:hover {
-  transform: scale(1.05);
-  color: black;
-  transition: all 0.6s ease-in-out;
-}
-.text_back ul {
-  padding-left: 0.2rem;
-}
-.text_back li {
-  list-style-type: disc;
-}
-.text_back li::marker {
-  color: #3c5823;
-  font-size: 2em;
-}
-.back h1 {
-  margin: 0;
-}
-.back {
+ .botones_perfil {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0.5em;
 }
-.back #linkdin {
+#bt_ver,
+#linkedin {
+  background-color: #f6e3e3;
   width: 100%;
-  top: 450px;
-  text-align: center;
+  display: inline;
 }
-.back #linkdin ion-icon {
-  font-size: 54px;
-  bottom: 0;
+
+.servicios_presentacion p {
+  width: 100% !important;
 }
-.back #linkdin:hover ion-icon {
-  transform: scale(1.2);
-  transition: all 0.2s ease-in-out;
-  filter: drop-shadow(2px 5px 2px rgba(68, 67, 67, 0.573));
+
+.card-us .card-body {
+  width: 20em;
+  height: 5em;
+
 }
+
+.card-us .card-title {
+  margin-top: 0.2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center !important;
+}
+
+.card-us .card-text {
+  text-align: center center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.card-us .card-img-top {
+  margin-top: 0.5em;
+  width: 10em;
+  padding: 5px;
+  border-radius: 50%;
+  filter: grayscale(1);
+}
+
+.card-us .card-body ion-icon {
+  margin-left: 35% !important;
+  justify-self: flex-end !important;
+}
+
+.card-us .card-body ion-icon {
+  vertical-align: middle;
+  margin-top: 0.3em;
+  font-size: 1.5em;
+}
+
+.card-us .card-body .btn-primary:hover {
+  filter: drop-shadow(5px 5px 4px rgba(169, 168, 168, 0.645));
+}
+.perfil_descripcion {
+  visibility: hidden !important;
+}
+.card-us .card-body #bt_ver:hover .perfil_descripcion {
+  height: 11em;
+  transform: translateY(30px);
+  transition-delay: 1.2s;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+  opacity: 1;
+  background-color: #1abc9c;
+  visibility: visible;
+  cursor: pointer;
+}
+
+@keyframes shake_linkedin {
+  0% {
+    transform: translateX(-2px);
+  }
+
+  25% {
+    transform: translateX(2px);
+  }
+
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+.card-us .card-body a:hover ion-icon {
+  animation: shake_linkedin 1.2s ease infinite;
+}
+
+/* .card-us .card-body::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+
+}
+
+.card-us .card-body::-webkit-scrollbar-thumb {
+  background-color: #35d1b29a !important;
+}
+
+.card-us .card-body {
+  overflow-y: scroll;
+}
+
+
+*/
+
