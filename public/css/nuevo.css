@@ -511,7 +511,7 @@ section {
   
 }
 .content-3d {
-  transform: translatez(70px) scale(0.8);
+  transform: translatez(10px) scale(0.8);
   line-height: 1.5em;
 }
 .content-3d h1 {
