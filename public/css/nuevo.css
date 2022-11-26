@@ -38,17 +38,14 @@ body {
 }
 
 header {
-  /* display: grid;
-    grid-template-columns: 3fr;
-    grid-template-rows: 1fr; */
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1500;
   background-color: whitesmoke !important;
 }
 
 header:hover {
-  box-shadow: 0px 2px 12px #eef0f0e8;
+  box-shadow: 0px 2px 12px #d8dbdbe8;
 }
 
 nav {
@@ -92,9 +89,6 @@ nav {
   color: var(--verde_boton) !important;
 }
 
-/* .navbar-nav{
-  float: right;
-} */
 .container-fluid {
   background-color: white;
   text-align: center;
@@ -513,8 +507,7 @@ section {
   color: rgb(24, 23, 23);
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  border-radius: 20px;
-   
+  border-radius: 20px;  
   
 }
 .content-3d {

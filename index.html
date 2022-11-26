@@ -561,7 +561,7 @@
     <section class="contacto" id="contacto">
 
       <div class="contenedor_formulario wow animate__animated animate__bounceInUp">
-        <form action="" class="formulario ">
+        <form action="php/contacto.php" method="post" class="formulario ">
           <h2>Contacto</h2>
           <form-group class="inputs">
             <label for="nombre">Nombre Completo</label>
@@ -587,8 +587,8 @@
             <label class="area" for="mensaje">Mensaje</label> <br>
             <textarea id="text-area" name="mensaje" rows="8" cols="50"></textarea>
             <br>
-            <a type="button" href="#" class="btn btn-primary btn_enviar">Enviar <ion-icon name="send-outline">
-              </ion-icon></a>
+            <button type="submit" href="#" class="btn btn-primary btn_enviar">Enviar <ion-icon name="send-outline">
+              </ion-icon></button>
           </form-group>
         </form>
       </div>
@@ -670,7 +670,7 @@
   <!-- scroll reveal -->
   <!--  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="/public/js/scroolReveal.js"></script>   -->
- 
+    <?php include('php/contacto.php'); ?>
 </body>
 
 </html>
