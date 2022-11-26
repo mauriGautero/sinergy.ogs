@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 * {
   margin: 0;
@@ -38,7 +38,6 @@ body {
 }
 
 header {
-
   /* display: grid;
     grid-template-columns: 3fr;
     grid-template-rows: 1fr; */
@@ -66,7 +65,6 @@ nav {
   height: auto !important;
   padding: 10px;
   margin-left: 5em !important;
-
 }
 
 .navbar-brand img {
@@ -84,7 +82,6 @@ nav {
 .navbar-expand-lg,
 .navbar-light {
   background-color: white;
-
 }
 
 .nav-link {
@@ -117,8 +114,8 @@ main {
   height: 2em;
   border-radius: 50%;
   position: fixed;
-  bottom: .5em;
-  right: .5em;
+  bottom: 0.5em;
+  right: 0.5em;
   border: none !important;
   caret-color: none !important;
   background-color: var(--verde_boton);
@@ -129,7 +126,6 @@ main {
   box-shadow: 2px 5px 6px rgba(128, 128, 128, 0.718);
 }
 
-
 section {
   max-width: 100%;
   height: auto;
@@ -138,7 +134,6 @@ section {
   display: flex;
   justify-content: center;
   align-content: center;
-
 }
 
 /* -------------------------------- section 1 ------------------------------- */
@@ -159,7 +154,6 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
 }
 
 .texto_section1 h1 {
@@ -182,7 +176,6 @@ section {
   padding: 20px;
   text-align: center;
   color: var(--verde_boton);
-
 }
 
 .texto_section1 p,
@@ -190,13 +183,11 @@ section {
   font-size: 1.6vw;
   width: 100%;
   padding: 20px;
-
 }
 
 .imagen_section1,
 .imagen_section2 {
   width: 40%;
-
 }
 
 .imagen_section1 img {
@@ -254,7 +245,6 @@ section {
   align-items: center;
 }
 
-
 /* ---------------------------- seccion servicios --------------------------- */
 .servicios {
   margin-top: 4em;
@@ -274,10 +264,9 @@ section {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: .2em;
+  gap: 0.2em;
   width: 100%;
 }
-
 
 .servicios_presentacion,
 .nosotros_detalle {
@@ -320,7 +309,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 30vh;  
+  height: 30vh;
   align-items: center;
   box-shadow: -2px 5px 12px rgba(89, 88, 88, 0.452);
 }
@@ -341,7 +330,7 @@ section {
 
 .card .card-body {
   width: 18em;
-  overflow-y:scroll ;
+  overflow-y: scroll;
 }
 
 .card-body .card-title {
@@ -354,7 +343,7 @@ section {
   padding: 5px;
   /*  filter: drop-shadow(-2px 5px 2px rgba(70, 69, 69, 0.353)); */
 }
-.card-body .card-text{
+.card-body .card-text {
   padding: 8px;
   padding-top: 0px;
 }
@@ -442,16 +431,14 @@ section {
 
 /* -------------------------- fin seccion servicios ------------------------- */
 
-
 /* --------------------------------seccion nosotros -------------------------------- */
 @keyframes bounceInUp {
-
   from,
   60%,
   75%,
   90%,
   to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   from {
@@ -483,13 +470,12 @@ section {
   /*cambio*/
   flex-wrap: wrap;
   justify-content: center;
-  gap: .2em;
+  gap: 0.2em;
   width: 100%;
 }
 
 .nosotros {
   margin-top: 4em !important;
-  
 }
 
 .cards-nosotros {
@@ -498,7 +484,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
- /*  width: 60%; */
+  /*  width: 60%; */
   margin-bottom: 1.5em;
 }
 
@@ -507,9 +493,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: .8em;
+  border-radius: 0.8em;
   box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
-
 }
 
 /* summary strong,
@@ -518,18 +503,18 @@ summary::marker {
 }
  */
 
- .botones_perfil{
+.botones_perfil {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  gap: .5em;
-  
+  gap: 0.5em;
 }
-#bt_ver, #linkedin{
+#bt_ver,
+#linkedin {
   background-color: #f6e3e3;
   width: 100%;
-  display: inline;  
+  display: inline;
 }
 
 .servicios_presentacion p {
@@ -539,12 +524,12 @@ summary::marker {
 .card-us .card-body {
   width: 20em;
   height: 5em;
-/*   overflow-y: hidden; */
+  /*   overflow-y: hidden; */
 }
 
 .card-us .card-title {
-  margin-top: .2em;
-  font-family: 'Roboto', sans-serif;
+  margin-top: 0.2em;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   font-weight: 700;
   text-align: center !important;
@@ -557,21 +542,21 @@ summary::marker {
 }
 
 .card-us .card-img-top {
-  margin-top: .5em;
+  margin-top: 0.5em;
   width: 10em;
   padding: 5px;
   border-radius: 50%;
   filter: grayscale(1);
 }
 
-.card-us .card-body  ion-icon {
+.card-us .card-body ion-icon {
   margin-left: 35% !important;
   justify-self: flex-end !important;
 }
 
 .card-us .card-body ion-icon {
   vertical-align: middle;
-  margin-top: .3em;
+  margin-top: 0.3em;
   font-size: 1.5em;
 }
 
@@ -581,7 +566,7 @@ summary::marker {
 .perfil_descripcion {
   visibility: hidden !important;
 }
-.card-us .card-body #bt_ver:hover .perfil_descripcion{
+.card-us .card-body #bt_ver:hover .perfil_descripcion {
   height: 11em;
   transform: translateY(30px);
   transition-delay: 1.2s;
@@ -639,21 +624,20 @@ summary::marker {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  margin-top: 2em ;
+  margin-top: 2em;
 }
-.logo_tecno{
+.logo_tecno {
   padding: 10px;
 }
-.logo_tecno .figure-caption{
+.logo_tecno .figure-caption {
   text-align: center;
   margin: 0 auto;
   visibility: hidden;
- 
 }
-.logo_tecno:hover img{
+.logo_tecno:hover img {
   animation: shake_ 4s ease infinite;
 }
-figure{
+figure {
   width: 150px;
   height: 150px;
   background-color: transparent !important;
@@ -664,20 +648,19 @@ figure{
   border-radius: 50% !important;
 }
 
-figure:hover .figure-caption{
+figure:hover .figure-caption {
   visibility: visible;
   animation: shake_ 4s ease infinite;
- -moz-animation:shake_ 4s ease infinite;
- -webkit-animation: shake_ 4s ease infinite;;
+  -moz-animation: shake_ 4s ease infinite;
+  -webkit-animation: shake_ 4s ease infinite;
 }
-
 
 /* -------------------------- fin seccion nosotros -------------------------- */
 /* ---------------------------- seccion contacto ---------------------------- */
 
 .contacto {
   margin-top: 4em;
- /*  width: 100%; */
+  /*  width: 100%; */
   height: auto;
   min-height: 100%;
   display: flex;
@@ -693,7 +676,7 @@ figure:hover .figure-caption{
   margin: 2em !important;
   margin: 0 auto;
   /* background-color: rgba(26, 25, 25, 0.6); */
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 /* .mapa iframe {
@@ -728,7 +711,6 @@ input:focus,
 input[type]:focus {
   /* box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(71, 70, 69, 0.6); */
   outline: 0 none !important;
-
 }
 
 .inputs input {
@@ -737,18 +719,16 @@ input[type]:focus {
   background-color: transparent !important;
   border-radius: 0;
   border-bottom: 0.5px solid rgba(127, 125, 125, 0.673) !important;
-
 }
 
 .inputs input:focus {
   border-bottom: 2px solid var(--verde_difuso) !important;
-
 }
 
 .inputs #text-area {
   border: 1px solid rgba(103, 101, 101, 0.673) !important;
   outline-offset: 0 !important;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 .btn_enviar {
@@ -758,20 +738,18 @@ input[type]:focus {
 
 .btn_enviar ion-icon {
   vertical-align: text-bottom;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .btn_enviar:hover {
   box-shadow: rgb(0, 0, 0, 71%);
   width: 8em;
   box-shadow: 2px 2px 8px rgba(70, 68, 68, 0.485);
-
 }
 
 .btn_enviar:hover ion-icon {
-  animation: shake_linkedin .8s ease-in-out infinite;
+  animation: shake_linkedin 0.8s ease-in-out infinite;
 }
-
 
 /* -------------------------- fin seccion contacto -------------------------- */
 footer {
@@ -781,13 +759,13 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 100%;
- /*  height: 40vh; */
+  /*  height: 40vh; */
   background-color: var(--verde_difuso);
   bottom: auto;
 }
 
 footer .barra-nav_footer {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 footer .direccion {
@@ -830,14 +808,13 @@ a {
 .derechos {
   text-align: center;
   color: rgb(31, 30, 30);
-  background-color:var(--verde_soft);
+  background-color: var(--verde_soft);
   width: 100%;
   height: 5em;
 }
 
 .derechos p {
   margin-top: 2em;
-
 }
 
 .derechos img {
@@ -890,7 +867,7 @@ footer .redes_sociales ion-icon {
 /*                               MODO RESPONSIVE                              */
 /* -------------------------------------------------------------------------- */
 
-@media all and (min-width:350px) and (max-width: 478px) {
+@media all and (min-width: 350px) and (max-width: 478px) {
   .navbar-brand {
     margin-left: 0 !important;
   }
@@ -914,7 +891,6 @@ footer .redes_sociales ion-icon {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
   }
 
   .texto_section1,
@@ -933,7 +909,6 @@ footer .redes_sociales ion-icon {
     width: 100%;
     padding: 20px;
     text-align: center;
-
   }
 
   .texto_section1 p,
@@ -943,9 +918,7 @@ footer .redes_sociales ion-icon {
     font-size: 4.5vw;
     width: 100%;
     padding: 15px;
-
   }
-
 
   .imagen_section1,
   .imagen_section2 {
@@ -985,7 +958,6 @@ footer .redes_sociales ion-icon {
   .card .card-body .card-title {
     padding: 12px;
     text-align: center;
-
   }
 
   /* -------------------------------- CARRUSEL -------------------------------- */
@@ -997,7 +969,6 @@ footer .redes_sociales ion-icon {
     align-items: center;
     max-width: 100% !important;
     height: 4em;
-
   }
 
   @-webkit-keyframes scroll {
@@ -1032,7 +1003,11 @@ footer .redes_sociales ion-icon {
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      to right,
+      white 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     content: "";
     height: 100px;
     position: absolute;
@@ -1078,23 +1053,21 @@ footer .redes_sociales ion-icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: .5em;
+    border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
     margin-bottom: 2em;
-
   }
 
   .card-us .card-img-top {
-    margin-top: .5em;
+    margin-top: 0.5em;
     width: 8em;
     padding: 2px;
     border-radius: 50%;
     filter: grayscale(1);
-
   }
 
   .card-us .card-title {
-    margin-top: .2em;
+    margin-top: 0.2em;
     font-size: 1.5em;
     font-weight: 400;
     text-align: center !important;
@@ -1115,7 +1088,6 @@ footer .redes_sociales ion-icon {
     width: 8em;
     margin-left: 10em !important;
     justify-self: flex-end !important;
-
   }
   .tecno {
     display: flex;
@@ -1126,31 +1098,28 @@ footer .redes_sociales ion-icon {
     align-items: center;
     gap: 1em;
     margin-top: 2em;
-  
   }
-  .logo_tecno{
+  .logo_tecno {
     padding: 5px;
   }
-  
-.logo_tecno .figure-caption{
-  text-align: center;
-  margin: 0 auto;
-  visibility: hidden;
- 
-}
-.logo_tecno:hover img{
-  animation: shake_ 4s ease infinite;
-}
-figure:hover .figure-caption{
-  visibility: visible;
-  animation: shake_ 4s ease infinite;
 
-}
+  .logo_tecno .figure-caption {
+    text-align: center;
+    margin: 0 auto;
+    visibility: hidden;
+  }
+  .logo_tecno:hover img {
+    animation: shake_ 4s ease infinite;
+  }
+  figure:hover .figure-caption {
+    visibility: visible;
+    animation: shake_ 4s ease infinite;
+  }
 
-.logo_tecno img{
-  filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
-  border-radius: 50% !important;
-}
+  .logo_tecno img {
+    filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+    border-radius: 50% !important;
+  }
 
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
@@ -1159,7 +1128,6 @@ figure:hover .figure-caption{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-
   }
 
   .mapa iframe {
@@ -1179,10 +1147,10 @@ figure:hover .figure-caption{
   .contenedor_formulario {
     width: 100%;
     padding: 2em;
-    margin: .5em !important;
+    margin: 0.5em !important;
     margin: 0 auto;
     /* background-color: rgba(26, 25, 25, 0.6); */
-    border-radius: .5em;
+    border-radius: 0.5em;
   }
 
   .formulario h2 {
@@ -1196,31 +1164,25 @@ figure:hover .figure-caption{
     background-color: transparent !important;
     border-radius: 0;
     border-bottom: 0.5px solid rgba(127, 125, 125, 0.673) !important;
-
   }
 
   .inputs input:focus {
     border-bottom: 2px solid var(--verde_difuso) !important;
-
   }
 
   .inputs #text-area {
     border: 1px solid rgba(96, 95, 95, 0.673) !important;
     outline-offset: 0 !important;
-    border-radius: .5em !important;
+    border-radius: 0.5em !important;
     width: 100% !important;
   }
 
   footer .direccion {
-
     margin-left: 1.5em;
-    ;
-
   }
-
 }
 
-@media screen and (max-width:479px) {
+@media screen and (max-width: 479px) {
   .navbar-brand {
     margin-left: 0 !important;
   }
@@ -1244,7 +1206,6 @@ figure:hover .figure-caption{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
   }
 
   .texto_section1,
@@ -1263,7 +1224,6 @@ figure:hover .figure-caption{
     width: 100%;
     padding: 20px;
     text-align: center;
-
   }
 
   .texto_section1 p,
@@ -1273,9 +1233,7 @@ figure:hover .figure-caption{
     font-size: 4.5vw;
     width: 100%;
     padding: 15px;
-
   }
-
 
   .imagen_section1,
   .imagen_section2 {
@@ -1315,7 +1273,6 @@ figure:hover .figure-caption{
   .card .card-body .card-title {
     padding: 12px;
     text-align: center;
-
   }
 
   /* -------------------------------- CARRUSEL -------------------------------- */
@@ -1327,7 +1284,6 @@ figure:hover .figure-caption{
     align-items: center;
     max-width: 100% !important;
     height: 4em;
-
   }
 
   @-webkit-keyframes scroll {
@@ -1358,12 +1314,15 @@ figure:hover .figure-caption{
     overflow: hidden;
     position: relative;
     max-width: 100%;
-
   }
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      to right,
+      white 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     content: "";
     height: 100px;
     position: absolute;
@@ -1387,15 +1346,12 @@ figure:hover .figure-caption{
     animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
-
   }
 
   .slider .slide {
     height: 100px;
     width: 250px;
-
   }
-
 
   /* -------------------------------- nosotros -------------------------------- */
   .nosotros {
@@ -1412,23 +1368,21 @@ figure:hover .figure-caption{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: .5em;
+    border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
     margin-bottom: 2em;
-
   }
 
   .card-us .card-img-top {
-    margin-top: .5em;
+    margin-top: 0.5em;
     width: 8em;
     padding: 2px;
     border-radius: 50%;
     filter: grayscale(1);
-
   }
 
   .card-us .card-title {
-    margin-top: .2em;
+    margin-top: 0.2em;
     font-size: 1.5em;
     font-weight: 400;
     text-align: center !important;
@@ -1449,10 +1403,8 @@ figure:hover .figure-caption{
     width: 8em;
     margin-left: 10em !important;
     justify-self: flex-end !important;
-
   }
 
-  
   .tecno {
     display: flex;
     flex-direction: row;
@@ -1463,28 +1415,26 @@ figure:hover .figure-caption{
     gap: 1em;
     margin-top: 2em;
   }
-  .logo_tecno{
+  .logo_tecno {
     padding: 5px;
   }
-.logo_tecno .figure-caption{
-  text-align: center;
-  margin: 0 auto;
-  visibility: hidden;
- 
-}
-.logo_tecno:hover img{
-  animation: shake_ 4s ease infinite;
-}
-figure:hover .figure-caption{
-  visibility: visible;
-  animation: shake_ 4s ease infinite;
+  .logo_tecno .figure-caption {
+    text-align: center;
+    margin: 0 auto;
+    visibility: hidden;
+  }
+  .logo_tecno:hover img {
+    animation: shake_ 4s ease infinite;
+  }
+  figure:hover .figure-caption {
+    visibility: visible;
+    animation: shake_ 4s ease infinite;
+  }
 
-}
-
-.logo_tecno img{
-  filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
-  border-radius: 50% !important;
-}
+  .logo_tecno img {
+    filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+    border-radius: 50% !important;
+  }
 
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
@@ -1493,7 +1443,6 @@ figure:hover .figure-caption{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-
   }
 
   .mapa iframe {
@@ -1513,10 +1462,10 @@ figure:hover .figure-caption{
   .contenedor_formulario {
     width: 100%;
     padding: 2em;
-    margin: .5em !important;
+    margin: 0.5em !important;
     margin: 0 auto;
     /* background-color: rgba(26, 25, 25, 0.6); */
-    border-radius: .5em;
+    border-radius: 0.5em;
   }
 
   .formulario h2 {
@@ -1530,28 +1479,22 @@ figure:hover .figure-caption{
     background-color: transparent !important;
     border-radius: 0;
     border-bottom: 0.5px solid rgba(127, 125, 125, 0.673) !important;
-
   }
 
   .inputs input:focus {
     border-bottom: 2px solid var(--verde_difuso) !important;
-
   }
 
   .inputs #text-area {
     border: 1px solid rgba(96, 95, 95, 0.673) !important;
     outline-offset: 0 !important;
-    border-radius: .5em !important;
+    border-radius: 0.5em !important;
     width: 100% !important;
   }
 
   footer .direccion {
-
     margin-left: 1.5em;
-    ;
-
   }
-
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
@@ -1578,7 +1521,6 @@ figure:hover .figure-caption{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
   }
 
   .texto_section1,
@@ -1597,7 +1539,6 @@ figure:hover .figure-caption{
     width: 100%;
     padding: 20px;
     text-align: center;
-
   }
 
   .texto_section1 p,
@@ -1607,13 +1548,11 @@ figure:hover .figure-caption{
     font-size: 4.5vw;
     width: 100%;
     padding: 15px;
-
   }
 
   .imagen_section1,
   .imagen_section2 {
     width: 100%;
-
   }
 
   .imagen_section1 img,
@@ -1649,7 +1588,6 @@ figure:hover .figure-caption{
   .card .card-body .card-title {
     padding: 12px;
     text-align: center;
-
   }
 
   /* -------------------------------- CARRUSEL -------------------------------- */
@@ -1661,7 +1599,6 @@ figure:hover .figure-caption{
     align-items: center;
     max-width: 100% !important;
     height: 4em;
-
   }
 
   @-webkit-keyframes scroll {
@@ -1696,7 +1633,11 @@ figure:hover .figure-caption{
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      to right,
+      white 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     content: "";
     height: 100px;
     position: absolute;
@@ -1752,23 +1693,21 @@ figure:hover .figure-caption{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: .5em;
+    border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
     margin-bottom: 2em;
-
   }
 
   .card-us .card-img-top {
-    margin-top: .5em;
+    margin-top: 0.5em;
     width: 8em;
     padding: 2px;
     border-radius: 50%;
     filter: grayscale(1);
-
   }
 
   .card-us .card-title {
-    margin-top: .2em;
+    margin-top: 0.2em;
     font-size: 1.5em;
     font-weight: 400;
     text-align: center !important;
@@ -1789,7 +1728,6 @@ figure:hover .figure-caption{
     width: 8em;
     margin-left: 10em !important;
     justify-self: flex-end !important;
-
   }
 
   .tecno {
@@ -1801,31 +1739,27 @@ figure:hover .figure-caption{
     align-items: center;
     gap: 1em;
     margin-top: 2em;
-  
   }
-  .logo_tecno{
+  .logo_tecno {
     padding: 10px;
   }
-  .logo_tecno .figure-caption{
+  .logo_tecno .figure-caption {
     text-align: center;
     margin: 0 auto;
     visibility: hidden;
-   
   }
-  .logo_tecno:hover img{
+  .logo_tecno:hover img {
     animation: shake_ 4s ease infinite;
   }
-  figure:hover .figure-caption{
+  figure:hover .figure-caption {
     visibility: visible;
     animation: shake_ 4s ease infinite;
-  
   }
-  
-  .logo_tecno img{
+
+  .logo_tecno img {
     filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
     border-radius: 50% !important;
   }
-  
 
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
@@ -1834,7 +1768,6 @@ figure:hover .figure-caption{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-
   }
 
   .mapa iframe {
@@ -1854,10 +1787,10 @@ figure:hover .figure-caption{
   .contenedor_formulario {
     width: 100%;
     padding: 2em;
-    margin: .5em !important;
+    margin: 0.5em !important;
     margin: 0 auto;
     /* background-color: rgba(26, 25, 25, 0.6); */
-    border-radius: .5em;
+    border-radius: 0.5em;
   }
 
   .formulario h2 {
@@ -1871,28 +1804,25 @@ figure:hover .figure-caption{
     background-color: transparent !important;
     border-radius: 0;
     border-bottom: 0.5px solid rgba(127, 125, 125, 0.673) !important;
-
   }
 
   .inputs input:focus {
     border-bottom: 2px solid var(--verde_difuso) !important;
-
   }
 
   .inputs #text-area {
     border: 1px solid rgba(96, 95, 95, 0.673) !important;
     outline-offset: 0 !important;
-    border-radius: .5em !important;
+    border-radius: 0.5em !important;
     width: 100% !important;
   }
 
   footer .direccion {
     margin-left: 1.5em;
-
   }
 }
 
-@media all and (min-width: 768px) and (max-width:960px) {
+@media all and (min-width: 768px) and (max-width: 960px) {
   .navbar-brand {
     margin-left: 0 !important;
   }
@@ -1916,7 +1846,6 @@ figure:hover .figure-caption{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
   }
 
   .texto_section1,
@@ -1935,7 +1864,6 @@ figure:hover .figure-caption{
     width: 100%;
     padding: 20px;
     text-align: center;
-
   }
 
   .texto_section1 p,
@@ -1945,13 +1873,11 @@ figure:hover .figure-caption{
     font-size: 3.5vw;
     width: 100%;
     padding: 20px;
-
   }
 
   .imagen_section1,
   .imagen_section2 {
     width: 100%;
-
   }
 
   .imagen_section1 img,
@@ -1987,7 +1913,6 @@ figure:hover .figure-caption{
   .card .card-body .card-title {
     padding: 12px;
     text-align: center;
-
   }
 
   /* -------------------------------- CARRUSEL -------------------------------- */
@@ -1999,7 +1924,6 @@ figure:hover .figure-caption{
     align-items: center;
     max-width: 100% !important;
     height: 4em;
-
   }
 
   @-webkit-keyframes scroll {
@@ -2034,7 +1958,11 @@ figure:hover .figure-caption{
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      to right,
+      white 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     content: "";
     height: 100px;
     position: absolute;
@@ -2090,23 +2018,21 @@ figure:hover .figure-caption{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: .5em;
+    border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
     margin-bottom: 2em;
-
   }
 
   .card-us .card-img-top {
-    margin-top: .5em;
+    margin-top: 0.5em;
     width: 8em;
     padding: 2px;
     border-radius: 50%;
     filter: grayscale(1);
-
   }
 
   .card-us .card-title {
-    margin-top: .2em;
+    margin-top: 0.2em;
     font-size: 1.5em;
     font-weight: 400;
     text-align: center !important;
@@ -2127,7 +2053,6 @@ figure:hover .figure-caption{
     width: 8em;
     margin-left: 10em !important;
     justify-self: flex-end !important;
-
   }
 
   .tecno {
@@ -2139,31 +2064,28 @@ figure:hover .figure-caption{
     align-items: center;
     gap: 1em;
     margin-top: 2em;
-  
   }
-  .logo_tecno{
+  .logo_tecno {
     padding: 5px;
   }
-  
-.logo_tecno .figure-caption{
-  text-align: center;
-  margin: 0 auto;
-  visibility: hidden;
- 
-}
-.logo_tecno:hover img{
-  animation: shake_ 4s ease infinite;
-}
-figure:hover .figure-caption{
-  visibility: visible;
-  animation: shake_ 4s ease infinite;
 
-}
+  .logo_tecno .figure-caption {
+    text-align: center;
+    margin: 0 auto;
+    visibility: hidden;
+  }
+  .logo_tecno:hover img {
+    animation: shake_ 4s ease infinite;
+  }
+  figure:hover .figure-caption {
+    visibility: visible;
+    animation: shake_ 4s ease infinite;
+  }
 
-.logo_tecno img{
-  filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
-  border-radius: 50% !important;
-}
+  .logo_tecno img {
+    filter: drop-shadow(0px 0px 12px rgb(190, 189, 189));
+    border-radius: 50% !important;
+  }
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
     display: flex;
@@ -2171,7 +2093,6 @@ figure:hover .figure-caption{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-
   }
 
   .mapa iframe {
@@ -2191,10 +2112,10 @@ figure:hover .figure-caption{
   .contenedor_formulario {
     width: 100%;
     padding: 2em;
-    margin: .5em !important;
+    margin: 0.5em !important;
     margin: 0 auto;
     /* background-color: rgba(26, 25, 25, 0.6); */
-    border-radius: .5em;
+    border-radius: 0.5em;
   }
 
   .formulario h2 {
@@ -2208,20 +2129,17 @@ figure:hover .figure-caption{
     background-color: transparent !important;
     border-radius: 0;
     border-bottom: 0.5px solid rgba(127, 125, 125, 0.673) !important;
-
   }
 
   .inputs input:focus {
     border-bottom: 2px solid var(--verde_difuso) !important;
-
   }
 
   .inputs #text-area {
     border: 1px solid rgba(96, 95, 95, 0.673) !important;
     outline-offset: 0 !important;
-    border-radius: .5em !important;
+    border-radius: 0.5em !important;
     width: 100% !important;
-
   }
   footer {
     display: flex;
@@ -2229,15 +2147,12 @@ figure:hover .figure-caption{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 100%;   
+    width: 100%;
     background-color: var(--verde_difuso);
     bottom: auto;
   }
   footer .direccion {
-
     margin-left: 1.5em;
-    
-
   }
   .derechos {
     text-align: center;
@@ -2246,193 +2161,138 @@ figure:hover .figure-caption{
     height: 6em;
     bottom: 0;
     background-color: var(--verde_muyclaro);
-  
   }
   .derechos p {
     margin-top: 2em;
-  
   }
- 
-  
 }
 
 /* --------------------------------- prueba card perfil 3D--------------------------------- */
 
 .card-3d {
-	min-width: 410px;/*400px*/
-	min-height: 500px;/*450px*/
-	border-radius: 20px;
-	position: relative;
-	-webkit-transition: 1.5s ease-in-out;
-	transition: 1.5s ease-in-out;
-	transform-style: preserve-3d;
-  border-radius: .5em;
+  min-width: 410px; /*400px*/
+  min-height: 500px; /*450px*/
+  border-radius: 20px;
+  position: relative;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
+  transform-style: preserve-3d;
+  border-radius: 0.5em;
   box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
   background-color: whitesmoke;
-     
 }
 
 .side {
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	padding: 2px 2px;
-	color: rgb(24, 23, 23);
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	border-radius: 20px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 2px 2px;
+  color: rgb(24, 23, 23);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 20px;
 }
 .content-3d {
-	transform: translatez(70px) scale(0.8);
-	line-height: 1.5em;
-  
+  transform: translatez(70px) scale(0.8);
+  line-height: 1.5em;
 }
 .content-3d h1 {
-	position: relative;
+  position: relative;
 }
 .content-3d p {
-	margin-top: -8px;
-	line-height: 2em;
-
+  margin-top: -8px;
+  line-height: 2em;
 }
 .content-3d h1:before {
-	content: "";
-	position: absolute;
-	bottom: -20px;
-	height: 3px;
-	/* background-color: #3e3; */
-	width: 70px;
-	left: 50%;
-	transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  height: 3px;
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.content-3d .card-img-top{
-    /* margin-top: .5em; */
-    width: 16em;
-    padding: 2px;
-    margin-bottom: 1em;
-    border-radius: 50%;
-    filter: grayscale(1);
-    box-shadow: 0px 9px 18px rgba(197, 198, 199, 0.758);
+.content-3d .card-img-top {
+  width: 16em;
+  padding: 2px;
+  margin-bottom: 1em;
+  border-radius: 50%;
+  filter: grayscale(1);
+  box-shadow: 0px 5px 12px rgb(195, 192, 192);
 }
-/* .conten-img{
-  width: 100%;
-}
-.conten-img:hover .card-img-top{
-  transition: all 0.8s ease-in-out;
--webkit-transform:scale(1.3);transform:scale(1.3);
-}
-.conten-img{
-  overflow: hidden;
-} */
 
 .front {
-	z-index: 2;
-	background-size: 100vh;
-	background-size: cover;
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
   background-color: white;
-	
 }
 .back {
-	
-	transform: rotateY(180deg);
-	z-index: 0;
-	padding-top: 1px;
- background-color: white;
-	
+  transform: rotateY(180deg);
+  z-index: 0;
+  padding-top: 1px;
+  background-color: white;
 }
-.front h4{
-  color:var(--verde_oscuro);
+.front h4 {
+  color: #1bba40;
 }
-.front h5{
-  color:var(--verde_oscuro);
- 
-
+.front h5 {
+  color: #1bba40;
 }
-.front p{
+.front p {
   font-size: 1.2em;
   color: #000000;
 }
 .card-3d:hover {
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   transition: all 1.4s ease-in-out;
 }
 .text_back {
-	text-align: left;
+  text-align: left;
   color: #101111;
 }
-.text_back p{
+.text_back p {
   font-size: 1.1em;
   width: 100%;
-  background-color: var(--verde_muyclaro);
+  color:#121c09;
+  background-color: #aaf170;
 }
-.text_back p:hover{
+.text_back p:hover {
   transform: scale(1.05);
-  color:black;
-  transition: all .6s ease-in-out;
+  color: black;
+  transition: all 0.6s ease-in-out;
 }
-.text_back  ul {
-  padding-left: .2rem;
-  
+.text_back ul {
+  padding-left: 0.2rem;
 }
-.text_back li{
+.text_back li {
   list-style-type: disc;
 }
-.text_back li::marker{
-  color: #009688;
+.text_back li::marker {
+  color: #3c5823;
   font-size: 2em;
 }
 .back h1 {
-	margin: 0;
+  margin: 0;
 }
-.back{
+.back {
   display: flex;
   flex-direction: row;
   justify-content: end;
 }
-.back #linkdin{
-  width: 100%;  
-  top:450px;
+.back #linkdin {
+  width: 100%;
+  top: 450px;
   text-align: center;
- 
 }
 .back #linkdin ion-icon {
   font-size: 54px;
   bottom: 0;
-   
 }
 .back #linkdin:hover ion-icon {
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
   filter: drop-shadow(2px 5px 2px rgba(68, 67, 67, 0.573));
 }
-/* form label,
-form input {
-	display: block;
-}
-form input,
-form textarea {
-	background: transparent;
-	border: 0;
-	border-bottom: 2px solid #444;
-	
-	width: 100%;
-	color: rgb(16, 15, 15);
-}*/
-/* form p {
-	margin: 5px 0;
-}  */
-/* form input[type="submit"] {
-	display: block;
-	width: auto;
-	margin: 10px auto;
-	padding: 5px 10px;
-	border: 3px solid #555;
-	border-radius: 4px;
-	color: rgb(21, 20, 20);
-	cursor: pointer;
-}
- */
-
-
