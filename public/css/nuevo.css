@@ -510,10 +510,10 @@ section {
   border-radius: 20px;  
   
 }
-.content-3d {
+/* .content-3d {
   transform: translatez(10px) scale(0.8);
   line-height: 1.5em;
-}
+} */
 .content-3d h1 {
   position: relative;
 }
