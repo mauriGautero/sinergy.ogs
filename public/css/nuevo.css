@@ -513,10 +513,7 @@ section {
   border-radius: 20px;  
   
 }
-/* .content-3d {
-  transform: translatez(10px) scale(0.8);
-  line-height: 1.5em;
-} */
+
 .content-3d h1 {
   position: relative;
 }
@@ -534,9 +531,10 @@ section {
   transform: translateX(-50%);
 }
 .content-3d .card-img-top {
-  width: 16em;
+  width: 8em;
   padding: 2px;
   margin-bottom: 1em;
+  margin-top: 1.2em;
   border-radius: 50%;
   filter: grayscale(1);
   box-shadow: 0px 5px 12px rgb(195, 192, 192);
@@ -564,8 +562,10 @@ section {
   color: #1bba40;
 }
 .front p {
-  font-size: 1.2em;
+  margin: 1.5em;
+  font-size: 1em;
   color: #000000;
+  padding: 10px;
 }
 .card-3d:hover {
   -webkit-transform: rotateY(180deg);
@@ -573,30 +573,28 @@ section {
   transition: all 1.4s ease-in-out;
 }
 .text_back {
+  margin-top: 1.5em;
   text-align: left;
   color: #101111;
 }
 .text_back p {
-  font-size: 1.1em;
-  width: 100%;
+  font-size: .9em;
   color:#121c09;
-  background-color: #aaf170;
+  background-color: #e3f4d5;
   border-radius: .5em;
-  padding-left: 25px;
+  padding: 15px;
+  margin:.8em
 }
-.text_back p:hover {
-  transform: scale(1.05);
-  color: black;
-  transition: all 0.2s ease-in-out;
-}
+
 .text_back ul {
   padding-left: 0.2rem;
+  margin-top: 1em;
 }
 .text_back li {
-  list-style-type: disc;
+  list-style-type: none;
 }
 .text_back li::marker {
-  color: #3c5823;
+  color: #31491b;
   font-size: 2em;
 }
 .back h1 {
@@ -609,7 +607,7 @@ section {
 }
 .back #linkdin {
   width: 100%;
-  top: 450px;
+  top: 400px;
   text-align: center;
 }
 .back #linkdin ion-icon {
@@ -1057,14 +1055,9 @@ footer .redes_sociales ion-icon {
     width: 100%;
   }
 
-/*   summary strong,
-  summary::marker {
-    color: var(--azul) !important;
-  } */
-
   .card-3d {
-    min-width: 350px; /*400px*/
-    min-height: 610px; /*450px*/
+    min-width: 400px; /*400px*/
+    min-height: 450px; /*450px*/
     border-radius: 20px;
     position: relative;
     -webkit-transition: 1.5s ease-in-out;
@@ -1072,7 +1065,7 @@ footer .redes_sociales ion-icon {
     transform-style: preserve-3d;
     border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
-    background-color: white;
+    background-color: whitesmoke;
   
   }
   
@@ -1085,19 +1078,15 @@ footer .redes_sociales ion-icon {
     color: rgb(24, 23, 23);
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    border-radius: 20px;
-     
+    border-radius: 20px;  
     
   }
-  .content-3d {
-    transform: translatez(70px) scale(0.8);
-    line-height: 1.5em;
-  }
+  
   .content-3d h1 {
     position: relative;
   }
   .content-3d p {
-    margin-top: -8px;
+ /*    margin-top: -8px; */
     line-height: 2em;
   }
   .content-3d h1:before {
@@ -1110,9 +1099,10 @@ footer .redes_sociales ion-icon {
     transform: translateX(-50%);
   }
   .content-3d .card-img-top {
-    width: 16em;
+    width: 8em;
     padding: 2px;
     margin-bottom: 1em;
+    margin-top: 1.2em;
     border-radius: 50%;
     filter: grayscale(1);
     box-shadow: 0px 5px 12px rgb(195, 192, 192);
@@ -1123,11 +1113,13 @@ footer .redes_sociales ion-icon {
     background-size: 100vh;
     background-size: cover;
     background-color: white;
+    position: absolute;
     
   }
   .back {
     transform: rotateY(180deg);
     z-index: 0;
+    position: absolute;
     padding-top: 1px;
     background-color: white;
   }
@@ -1138,8 +1130,10 @@ footer .redes_sociales ion-icon {
     color: #1bba40;
   }
   .front p {
-    font-size: 1.2em;
+    margin: 1.5em;
+    font-size: 1em;
     color: #000000;
+    padding: 10px;
   }
   .card-3d:hover {
     -webkit-transform: rotateY(180deg);
@@ -1147,30 +1141,28 @@ footer .redes_sociales ion-icon {
     transition: all 1.4s ease-in-out;
   }
   .text_back {
+    margin-top: 1.5em;
     text-align: left;
     color: #101111;
   }
   .text_back p {
-    font-size: 1.1em;
-    width: 100%;
+    font-size: .9em;
     color:#121c09;
-    background-color: #aaf170;
+    background-color: #e3f4d5;
     border-radius: .5em;
-    padding-left: 25px;
+    padding: 15px;
+    margin:.8em
   }
-  .text_back p:hover {
-    transform: scale(1.05);
-    color: black;
-    transition: all 0.2s ease-in-out;
-  }
+  
   .text_back ul {
     padding-left: 0.2rem;
+    margin-top: 1em;
   }
   .text_back li {
-    list-style-type: disc;
+    list-style-type: none;
   }
   .text_back li::marker {
-    color: #3c5823;
+    color: #31491b;
     font-size: 2em;
   }
   .back h1 {
@@ -1183,7 +1175,7 @@ footer .redes_sociales ion-icon {
   }
   .back #linkdin {
     width: 100%;
-    top: 450px;
+    top: 400px;
     text-align: center;
   }
   .back #linkdin ion-icon {
@@ -1195,7 +1187,6 @@ footer .redes_sociales ion-icon {
     transition: all 0.2s ease-in-out;
     filter: drop-shadow(2px 5px 2px rgba(68, 67, 67, 0.573));
   }
-  
   
   .tecno {
     display: flex;
@@ -1467,7 +1458,7 @@ footer .redes_sociales ion-icon {
   }
   .card-3d {
     min-width: 350px; /*400px*/
-    min-height: 610px; /*450px*/
+    min-height: 480px; /*450px*/
     border-radius: 20px;
     position: relative;
     -webkit-transition: 1.5s ease-in-out;
