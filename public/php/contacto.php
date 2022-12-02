@@ -11,7 +11,7 @@ if(isset($_POST['enviar'])){
         $header="Reply-To: mauri.gautero@gmail.com"."\r\n";
         $header="X-Mailer: PHP/".phpversion();
         $mail=mail($email,$nombre,$mensaje, $header);
-        fi($mail){
+        if($mail){
             echo" <h4> mail enviado </4>";
         }
 
