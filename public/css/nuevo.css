@@ -336,6 +336,7 @@ section {
 .card .card-body {
 /*   width: 24em; */
   overflow-y: scroll;
+  margin-bottom: 2em;
 }
 .card-text .enfatizar{
   font-style: italic;
