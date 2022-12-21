@@ -40,8 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-
-              <a class="nav-link" aria-current="page" href="/index.html"><span class="menu_nombre">Inicio</span></a>
+              <a class="nav-link" aria-current="page" href="/index.html#toper"><span class="menu_nombre">Inicio</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html#servicios_seccion"><span class="menu_nombre">Servicios</span></a>
@@ -57,7 +56,7 @@
       </div>
     </nav>
   </header>
-  <h6 class="toper"> </h6>
+  <h6 class="toper" id="toper"> </h6>
   <main>
     <button class="subir hidden">
       <ion-icon name="chevron-up-outline" class="icon-subir"></ion-icon>
@@ -235,6 +234,12 @@
           </div>    
 
         </div>
+        <div class="video wow animate__animated animate__fadeInUp">
+          <video height="350" src="./public/video/novedades_1.mp4" loop autoplay muted controls >
+            
+            Tu navegador no es compatible con vídeos HTML5
+          </video>
+        </div>
         <div class="contenedor_carrucel wow animate__animated animate__fadeInRight">
           <h2>Empresas que <strong>confían en Sinergy</strong> </h2>
           <div class="slider">
@@ -290,18 +295,14 @@
             </div>
           </div>
         </div>
+      </div>  
     </section>
 
     <!-- -------------------------- seccion Nosotros --------------------------- -->
     <h5 id="nosotros_seccion"></h5>
 
     <section class="nosotros" id="nosotros">
-      <div class="video wow animate__animated animate__fadeInUp">
-        <video height="350" src="./public/video/novedades_1.mp4" loop autoplay muted controls >
-          
-          Tu navegador no es compatible con vídeos HTML5
-        </video>
-      </div>
+     
       <div class="content_nosotros">       
         <div class="nosotros_detalle wow animate__animated animate__fadeInUp">
           <h2>Nosotros</h2>
@@ -383,8 +384,7 @@
                 <span>
                   <h5>COO</h5>
                 </span>
-                <p>Una persona dinámica y creativa, entusiasta de los procesos, con perfil mixto de Sistemas y
-                  Tecnología, Management Estratégico, Project Management y Procesos.</p>
+                <p>Dinámico y creativo, entusiasta de los procesos  y la gestión eficiente.Con foco en Management Estratégico, Sistemas y Tecnologías.</p>
               </div>
             </div>
             <div class="back side">
@@ -423,7 +423,7 @@
           <div class="card-3d wow animate__animated animate__bounceInUp">
             <div class="front side">
               <div class="content-3d">
-                <img class="card-img-top" src="/public/img/marce.png" class="img-fluid" alt="Foto Ruben Galleguillo"
+                <img class="card-img-top" src="/public/img/marce1.png" class="img-fluid" alt="Foto Ruben Galleguillo"
                   loading="lazy">
                 <h4 class="card-title">Marcelo Serrano</h4>
                 <span>
@@ -576,7 +576,7 @@
     <section class="contacto" id="contacto">     
     
      <div class="contenedor_formulario wow animate__animated animate__bounceInUp">
-        <form action="public/php/contacto.php" method="post" class="formulario ">
+        <form action="public/php/contacto.php" method="post" class="formulario">
           <h2>Contacto</h2>
           <form-group class="inputs">
             <label for="nombre">Nombre Completo</label>

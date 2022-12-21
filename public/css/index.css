@@ -333,6 +333,18 @@ section {
   border-radius: 1em;
 }
 
+.content_servicios .video{
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: .5em;
+}
+.video video{
+  width: 80%;
+  height: 80%;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -505,17 +517,7 @@ section {
   gap: 0.2em;
   width: 100%;
 }
-.nosotros .video{
-  width: 100%;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: .5em;
-}
-.video video{
-  width: 80%;
-  height: 80%;
-}
+
 
 .nosotros {
   display: flex;
@@ -773,17 +775,9 @@ figure:hover .figure-caption {
   border-radius: 0.5em;
 }
 
-/* .mapa iframe {
-  margin-top: .5em;
-  margin-bottom: 1em;
-  width: 500px !important;
-  height: 400px !important;
-  filter: drop-shadow(2px 5px 10px rgba(77, 76, 76, 0.466));
-  border-radius: .5em;
-}
- */
+
 .formulario h2 {
-  color: rgb(32, 30, 30);
+  color: var(--verde_boton);
   margin-bottom: 2em;
 }
 
@@ -1068,6 +1062,12 @@ footer .redes_sociales ion-icon {
     
     margin-bottom: 1.5em;
   }
+  .content_servicios {
+    width: 100%;    
+  }
+  .content_servicios .video{
+    margin-top: 2em;
+  }
   
   .tarjetas_up, .tarjetas_down {
     display: flex;
@@ -1179,10 +1179,11 @@ footer .redes_sociales ion-icon {
   .nosotros {
     width: 100%;
   }
-  .nosotros .video{
-    margin-top: 6em;
-  }
+  
 
+.nosotros_detalle h2{
+  margin-top: 2em;
+}
 .cards-nosotros{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
