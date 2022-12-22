@@ -63,6 +63,10 @@
     </button>
     <section class="section_1">
       <div class="contenido_section_1" id="section_1">
+        <div class="imagen_section1">
+          <img src="/public/img/online_laptop_smartphone_icon.png" id="laptop" class="img-fluid"
+            alt="ilustracion laptop">
+        </div>
         <div class="texto_section1">          
             <h1>Gestión Inteligente de Documentos </h1>
             <p hidden>Complementamos la información del ERP gestionando toda la
@@ -88,11 +92,7 @@
             </p>
             <p>Brindamos un complemento a su sistema de gestión ERP.</p>
         </div>
-        <div class="imagen_section1">
-          <img src="/public/img/online_laptop_smartphone_icon.png" id="laptop" class="img-fluid"
-            alt="ilustracion impresora">
-
-        </div>
+        
       </div>
     </section>
 
@@ -158,7 +158,7 @@
               <div class="card wow animate__animated animate__bounceInUp">
                 <img class="card-img-top" src="/public/img/family_apps/apps_control.png" class="img-fluid"
                   alt="control documental" loading="lazy">
-                <h6 class="card-title">Sinergy Access Control</h6>
+                <h6 class="card-title">Sinergy Control de Acceso</h6>
                 <div class="card-body">
                   <p class="card-text">Con Sinergy Access Control brindamos el servicio de control de personas y vehículos
                     (propios o de terceros) dependientes de proveedores o terceros; con el fin de gestionar las
@@ -315,9 +315,7 @@
           <p class="wow animate__animated animate__fadeInUp">Por mucho tiempo, hemos asesorado y colaborado con empresas en sus
             procesos, proyectos de innovación, gestión laboral e impositiva, en prevención y
             transferencia de riesgos, logrando una mirada integral de la empresa, una mirada
-            sistémica.</p>
-          <p class="wow animate__animated animate__fadeInUp">Entendemos que la mejor manera de abordar un problema es analizarlo desde
-            todos los enfoques posibles para encontrar la solución más eficiente.</p>
+            sistémica.</p>          
           <p class="wow animate__animated animate__fadeInUp">
             Compartimos valores y filosofía de trabajo con un alto grado de auto exigencia en
             la calidad de lo que hacemos.
@@ -364,7 +362,7 @@
                     </li>
                   </ul>
                   <div id="linkdin">
-                    <a href="#*"><span title="LinkedIn" style="font-size: x-large;">
+                    <a href="https://www.linkedin.com/in/adrian-porta-43aa9227/"><span title="LinkedIn" style="font-size: x-large;">
                         <ion-icon name="logo-linkedin"></ion-icon>
                       </span></a>
                   </div>
@@ -423,7 +421,7 @@
           <div class="card-3d wow animate__animated animate__bounceInUp">
             <div class="front side">
               <div class="content-3d">
-                <img class="card-img-top" src="/public/img/marce1.png" class="img-fluid" alt="Foto Ruben Galleguillo"
+                <img class="card-img-top" src="/public/img/marce2.png" class="img-fluid" alt="Foto Ruben Galleguillo"
                   loading="lazy">
                 <h4 class="card-title">Marcelo Serrano</h4>
                 <span>
@@ -500,7 +498,7 @@
                     </li>
                   </ul>
                   <div id="linkdin">
-                    <a href="#*"><span title="LinkedIn" style="font-size: x-large;">
+                    <a href="https://www.linkedin.com/in/ruben-galleguillo-46137622/"><span title="LinkedIn" style="font-size: x-large;">
                         <ion-icon name="logo-linkedin"></ion-icon>
                       </span></a>
                   </div>
@@ -576,7 +574,7 @@
     <section class="contacto" id="contacto">     
     
      <div class="contenedor_formulario wow animate__animated animate__bounceInUp">
-        <form action="public/php/contacto.php" method="post" class="formulario">
+        <form action="https://formsubmit.co/ruben.galleguillo@ogs.com.ar" method="POST" class="formulario">
           <h2>Contacto</h2>
           <form-group class="inputs">
             <label for="nombre">Nombre Completo</label>
@@ -603,6 +601,9 @@
             <textarea id="text-area" name="mensaje" rows="8" cols="50"></textarea>
             <br>
             <button type="submit" href="#" class="btn btn-primary btn_enviar">Enviar </button>
+            <input type="hidden" name="_next" value="https://sinergy-ogs-b10a37.netlify.app/index.html#toper">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
           </form-group>
         </form>
       </div>
@@ -615,7 +616,7 @@
       <address>
         <p>
           <ion-icon name="home-outline"></ion-icon>
-          Avenida Pablo Richieri 2825, 1P Of.C<br>Barrio Jardín, Córdoba Capital
+           Avenida Pablo Richieri 2825, 1P Of.C<br>Barrio Jardín, Córdoba Capital
           <br>
           Argentina, Córdoba
         </p>
@@ -624,10 +625,10 @@
 
     <div class="barra-nav_footer">
       <ul class="d-flex flex-column justify-content-center m-4">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="/index.html#toper">Inicio</a></li>
+        <li><a href="index.html#servicios_seccion">Servicios</a></li>
+        <li><a href="index.html#nosotros_seccion">Nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
       </ul>
     </div>
 
@@ -690,7 +691,6 @@
         barra.classList.remove('navScroller');
       }
     }
-  console.log(barra);
   </script>
 
 </body>
