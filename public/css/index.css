@@ -359,12 +359,12 @@ section {
   box-shadow: -2px 5px 6px rgba(89, 88, 88, 0.452);
 }
 .card .card-body::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
   height: 2px;
 }
 
 .card .card-body::-webkit-scrollbar-thumb {
-  background-color: #d4ede8ad !important;
+  background-color: #96d5c9ad !important;
 }
 
 .card .card-body {
@@ -382,7 +382,7 @@ section {
 }
 
 .card .card-img-top {
-  width: 4em;
+  width: 5em;
   padding: 6px;
   /*  filter: drop-shadow(-2px 5px 2px rgba(70, 69, 69, 0.353)); */
 }
@@ -683,26 +683,25 @@ section {
   justify-content: end;
 }
 .back #linkdin {
-  width: 100%;
+  width: 10%;
   top: 400px;
+  margin-left: 45%;
   text-align: center;
-  cursor: pointer;
 }
-.back #linkdin ion-icon {
+#linkdin ion-icon {
   font-size: 54px;
-  top: 0;
-  /* color: var(--verde_boton); */
+  top: 0;  
 }
-.back #linkdin:hover ion-icon {
-  transform: scale(1.2);
+#linkdin:hover ion-icon {
+  transform: scale(1.08);
   transition: all 0.2s ease-in-out;
   filter: drop-shadow(2px 5px 2px rgba(68, 67, 67, 0.573));
   cursor: pointer;
 }
-ion-icon {
+/* ion-icon {
   pointer-events: none;
 }
-
+ */
 
 /* ------------------------------- Tecnologias ------------------------------ */
 .titulo_tecno {
@@ -718,24 +717,34 @@ ion-icon {
   width: 50%;
   justify-content: center;
   align-items: center;
-  gap: 2em;
-  margin-top: 2em;
 }
-.logo_tecno {
+/* .logo_tecno {
   padding: 10px;
-}
+} */
 .logo_tecno .figure-caption {
   text-align: center;
   margin: 0 auto;
+  margin-top: .4em;
   visibility: hidden;
+}
+.figure-caption{
+  font-weight: bold;
 }
 .logo_tecno:hover img {
   animation: shake_ 4s ease infinite;
 }
 figure {
-  width: 150px;
-  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
   background-color: transparent !important;
+}
+figure img{
+  width: 6.5em;
+  height: 6.5em;
 }
 .logo_tecno img {
   /* filter: drop-shadow(0px 0px 12px rgb(209, 208, 208)); */
@@ -1332,13 +1341,21 @@ footer .redes_sociales ion-icon {
     width: 80%;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    margin-top: 2em;
+    gap: .1em;
+    margin-top: .2em;
   }
-  .logo_tecno {
+  /* .logo_tecno {
     padding: 5px;
+  } */
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 120px !important;
+    background-color: transparent !important;
   }
-
   .logo_tecno .figure-caption {
     text-align: center;
     margin: 0 auto;
