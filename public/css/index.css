@@ -180,7 +180,7 @@ section {
 
 .texto_section1 h1,
 .texto_section2 h2 {
-  font-size: 2.8vw;
+  font-size: 1.5vw;
   width: 100%;
   padding: 20px;
   text-align: center;
@@ -200,6 +200,7 @@ section {
 
 .imagen_section2 {
   width: 40%;
+  display: none;
 }
 
 .imagen_section1 img {
@@ -208,21 +209,29 @@ section {
   animation: shake_ 4s ease-in-out infinite;
   margin-left: 5em;
   margin-top: 1em;
-  display: none;
+  
   /* margin-bottom: 1.5em; */
   /* filter: drop-shadow(-2px 0px 6px rgba(16, 16, 16, 0.873)); */
 }
 
 .imagen_laptop{
-  visibility: visible !important;
-  display: inline;
+  display: none;
+  /* visibility: visible !important;
+  display: inline; */
 }
-
+.imagen_dardo{
+  width: 25vw;
+  margin-top: 1em;
+  margin-right: 4em;
+  position: relative;
+  animation: shake_ 5s ease-in-out infinite;
+}
 .imagen_section2 img {
   width: 25vw;
   margin-top: 1em;
   margin-left: 5em;
   position: relative;
+  display: none;
   animation: shake_ 5s ease-in-out infinite;
   /* filter: drop-shadow(-2px 0px 6px rgba(16, 16, 16, 0.873)); */
 }
@@ -334,8 +343,8 @@ section {
 }
 
 .content_servicios .card {
-  width: 20em;
-  min-height: 25em;
+  width: 25em;
+  min-height: 35em;
   border-radius: 1em;
 }
 
@@ -372,6 +381,7 @@ section {
 
 .card .card-body::-webkit-scrollbar-thumb {
   background-color: #96d5c9ad !important;
+  cursor: pointer;
 }
 
 .card .card-body {
@@ -1054,12 +1064,18 @@ footer .redes_sociales ion-icon {
     visibility: hidden;
     display: none;    
   }
+  .imagen_dardo{
+    width: 40%;
+    display: inline;    
+  }
   .imagen_section2 img {
     width: 80vw;
+    display: inline;
     padding: 4.5em;
     margin-left: 2em;
     margin-top: 24em;
   }
+
 
   /* -------------------------------- servicios ------------------------------- */
   .servicios_presentacion,
@@ -1780,7 +1796,7 @@ footer .redes_sociales ion-icon {
   }
 
   .texto_section1 h1 {
-    margin-top: 8em;
+    margin-top: 1em;
   }
 
   .contenido_section_1,
@@ -1804,7 +1820,7 @@ footer .redes_sociales ion-icon {
   .texto_section2 h2,
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 6vw;
+    font-size: 4vw;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -1814,11 +1830,11 @@ footer .redes_sociales ion-icon {
   .texto_section2 p,
   .servicios_presentacion p,
   .nosotros_detalle p {
-    font-size: 4.5vw;
+    font-size: 2.5vw;
     width: 100%;
     padding: 15px;
   }
-
+/* 
   .imagen_section1,
   .imagen_section2 {
     width: 100%;
@@ -1830,7 +1846,38 @@ footer .redes_sociales ion-icon {
     padding: 2.5em;
     margin-left: 2em;
   }
+ */
 
+ .imagen_section1,
+ .imagen_section2 {
+   width: 100%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .imagen_section1 img {
+   width: 50%;
+   padding: 1.5em;   
+   margin-top: 30em !important;
+   visibility: visible;
+   display: inline;
+ }
+ .imagen_laptop{
+   visibility: hidden;
+   display: none;    
+ }
+ .imagen_dardo{
+   width: 40%;
+   display: none;    
+ }
+ .imagen_section2 img {
+   display: inline;
+   width: 50%;
+   padding: 2.5em;
+   margin-left: 2em;
+   margin-top: 25em;
+ }
   /* -------------------------------- servicios ------------------------------- */
   .servicios_presentacion,
   .nosotros_detalle {
@@ -2097,7 +2144,7 @@ footer .redes_sociales ion-icon {
   }
 
   .texto_section1 h1 {
-    margin-top: 8em;
+    margin-top: 1em;
   }
 
   .contenido_section_1,
@@ -2121,7 +2168,7 @@ footer .redes_sociales ion-icon {
   .texto_section2 h2,
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 6vw;
+    font-size: 4vw;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -2131,12 +2178,13 @@ footer .redes_sociales ion-icon {
   .texto_section2 p,
   .servicios_presentacion p,
   .nosotros_detalle p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     width: 100%;
-    padding: 20px;
+    padding-left: 2.5em;
+    padding-right: 1.5em;
   }
 
-  .imagen_section1,
+/*   .imagen_section1,
   .imagen_section2 {
     width: 100%;
   }
@@ -2147,6 +2195,38 @@ footer .redes_sociales ion-icon {
     padding: 10em;
     margin-left: 4em;
   }
+ */
+
+ .imagen_section1,
+ .imagen_section2 {
+   width: 100%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .imagen_section1 img {
+   width: 50%;
+   padding: 1.5em;   
+   margin-top: 37em !important;
+   visibility: visible;
+   display: inline;
+ }
+ .imagen_laptop{
+   visibility: hidden;
+   display: none;    
+ }
+ .imagen_dardo{
+   width: 40%;
+   display: none;    
+ }
+ .imagen_section2 img {
+   display: inline;
+   width: 50%;
+   padding: 2.5em;
+   margin-left: 2em;
+   margin-top: 45em;
+ }
 
   /* -------------------------------- servicios ------------------------------- */
   .servicios_presentacion,
