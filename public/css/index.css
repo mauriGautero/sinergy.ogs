@@ -1512,7 +1512,7 @@ footer .redes_sociales ion-icon {
   .nosotros_detalle h2 {
     font-size: 6vw;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
   }
 
@@ -1520,7 +1520,7 @@ footer .redes_sociales ion-icon {
   .texto_section2 p,
   .servicios_presentacion p,
   .nosotros_detalle p {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     width: 100%;
     padding-left: 2.5em;
     padding-right: 1.5em;
