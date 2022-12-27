@@ -180,7 +180,7 @@ section {
 
 .texto_section1 h1,
 .texto_section2 h2 {
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   width: 100%;
   padding: 20px;
   text-align: center;
@@ -404,9 +404,9 @@ section {
   /*  filter: drop-shadow(-2px 5px 2px rgba(70, 69, 69, 0.353)); */
 }
 .card-body .card-text {
-  padding: 6px;
+  padding: 18px;
   padding-top: 0px;
-  font-size: .8em;
+  font-size: 1.1em;
 }
 .contenedor_carrucel {
   margin-top: 2em;
@@ -1486,7 +1486,7 @@ footer .redes_sociales ion-icon {
   }
 
   .texto_section1 h1 {
-    margin-top: 1.5em;
+    margin-top: .5em;
   }
 
   .contenido_section_1,
@@ -1520,22 +1520,42 @@ footer .redes_sociales ion-icon {
   .texto_section2 p,
   .servicios_presentacion p,
   .nosotros_detalle p {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     width: 100%;
-    padding: 15px;
+    padding-left: 2.5em;
+    padding-right: 1.5em;
   }
 
-  .imagen_section1,
-  .imagen_section2 {
-    width: 100%;
-  }
+ .imagen_section1,
+ .imagen_section2 {
+   width: 100%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
-  .imagen_section1 img,
-  .imagen_section2 img {
-    width: 80vw;
-    padding: 2.5em;
-    margin-left: 2em;
-  }
+ .imagen_section1 img {
+   width: 50%;
+   padding: 1.5em;   
+   margin-top: 1em !important;
+   visibility: visible;
+   display: inline;
+ }
+ .imagen_laptop{
+   visibility: hidden;
+   display: none;    
+ }
+ .imagen_dardo{
+   width: 40%;
+   display: none;    
+ }
+ .imagen_section2 img {
+   display: inline;
+   width: 50%;
+   padding: 2.5em;
+   margin-left: 2em;
+   margin-top: 15em;
+ }
 
   /* -------------------------------- servicios ------------------------------- */
   .servicios_presentacion,
@@ -2225,7 +2245,7 @@ footer .redes_sociales ion-icon {
    width: 50%;
    padding: 2.5em;
    margin-left: 2em;
-   margin-top: 45em;
+   margin-top: 35em;
  }
 
   /* -------------------------------- servicios ------------------------------- */
