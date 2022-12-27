@@ -160,7 +160,7 @@ section {
 .contenido_section_2 {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -192,11 +192,12 @@ section {
   font-size: 1.4vw;
   width: 100%;
   /* padding: 10px; */
-  padding-left: 20px;
+  padding-left: 0px;
   padding-right: 20px;
+  margin-right: 5em;
 }
 
-.imagen_section1,
+
 .imagen_section2 {
   width: 40%;
 }
@@ -207,8 +208,14 @@ section {
   animation: shake_ 4s ease-in-out infinite;
   margin-left: 5em;
   margin-top: 1em;
+  display: none;
   /* margin-bottom: 1.5em; */
   /* filter: drop-shadow(-2px 0px 6px rgba(16, 16, 16, 0.873)); */
+}
+
+.imagen_laptop{
+  visibility: visible !important;
+  display: inline;
 }
 
 .imagen_section2 img {
@@ -1030,16 +1037,22 @@ footer .redes_sociales ion-icon {
     padding: 15px;
   }
 
-  .imagen_section1,
+  .imagen_laptop,
   .imagen_section2 {
     width: 100%;
   }
 
   .imagen_section1 img {
-    width: 80vw;
+    width: 90vw;
     padding: 2.5em;
     margin-left: 2em;
     margin-top: 10em;
+    visibility: visible;
+    display: inline;
+  }
+  .imagen_laptop{
+    visibility: hidden;
+    display: none;    
   }
   .imagen_section2 img {
     width: 80vw;
