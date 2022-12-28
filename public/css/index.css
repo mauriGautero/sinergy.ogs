@@ -36,7 +36,7 @@
 body {
   width: 100%;
   background-image: url('/public/img/svg/wave_soft.svg');
-  background-position:initial;
+  background-position: initial;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
@@ -45,12 +45,13 @@ body {
 header {
   z-index: 1500;
   position: sticky;
-  top: 0; 
+  top: 0;
   background-color: whitesmoke !important;
 }
- header:hover{
+
+header:hover {
   box-shadow: 0px 2px 12px #d8dbdbe8;
- }
+}
 
 nav {
   display: flex;
@@ -58,7 +59,7 @@ nav {
   width: 100%;
   height: auto;
   justify-content: space-evenly;
-  align-items: center; 
+  align-items: center;
   z-index: 1450;
   position: absolute;
 }
@@ -100,7 +101,7 @@ nav {
   text-align: center;
 }
 
-.navScroller{ 
+.navScroller {
   box-shadow: 0px 2px 12px #d8dbdbe8;
 }
 
@@ -119,7 +120,7 @@ main {
   border-radius: 50%;
   position: fixed;
   bottom: 0.5em;
-  right: 0.5em;
+  right: 1.5em;
   border: none !important;
   caret-color: none !important;
   background-color: var(--verde_boton);
@@ -129,12 +130,14 @@ main {
   transition: transform 2s ease;
   box-shadow: 1px 3px 5px rgba(63, 62, 62, 0.718);
 }
-.subir{
+
+.subir {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
+
 section {
   max-width: 100%;
   height: auto;
@@ -166,7 +169,7 @@ section {
 }
 
 .texto_section1 h1 {
-  margin-top: 1em;
+  margin-top: .1em;
 }
 
 .texto_section1,
@@ -180,16 +183,19 @@ section {
 
 .texto_section1 h1,
 .texto_section2 h2 {
-  font-size: 2.5vw;
+  font-size: 2.5em;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
   color: var(--verde_boton);
+}
+.texto_section1 h1{
+  padding-bottom: 20px;
 }
 
 .texto_section1 p,
 .texto_section2 p {
-  font-size: 1.4vw;
+  font-size: 1.5em;
   width: 100%;
   /* padding: 10px; */
   padding-left: 0px;
@@ -204,28 +210,30 @@ section {
 }
 
 .imagen_section1 img {
-  width: 30vw;
+  width: 25vw;
   position: relative;
   animation: shake_ 4s ease-in-out infinite;
   margin-left: 5em;
   margin-top: 1em;
-  
+
   /* margin-bottom: 1.5em; */
   /* filter: drop-shadow(-2px 0px 6px rgba(16, 16, 16, 0.873)); */
 }
 
-.imagen_laptop{
+.imagen_laptop {
   display: none;
   /* visibility: visible !important;
   display: inline; */
 }
-.imagen_dardo{
+
+.imagen_dardo {
   width: 25vw;
   margin-top: 1em;
   margin-right: 4em;
   position: relative;
   animation: shake_ 5s ease-in-out infinite;
 }
+
 .imagen_section2 img {
   width: 25vw;
   margin-top: 1em;
@@ -286,7 +294,7 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-/*   background-color: var(--)verde_soft; */
+  /*   background-color: var(--)verde_soft; */
 }
 
 .content_servicios {
@@ -307,7 +315,7 @@ section {
 
 .servicios_presentacion h2,
 .nosotros_detalle h2 {
-  font-size: 2.8vw;
+  font-size: 2.8em;
   width: 100%;
   padding: 20px;
   text-align: center;
@@ -316,7 +324,7 @@ section {
 
 .servicios_presentacion p,
 .nosotros_detalle p {
-  font-size: 1.4vw;
+  font-size: 1.4em;
   width: 100%;
   /* padding: 10px; */
 }
@@ -332,30 +340,33 @@ section {
   padding: .5em;
   margin-bottom: 1.5em;
 }
-.tarjetas_up, .tarjetas_down {
+
+.tarjetas_up,
+.tarjetas_down {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content:center ;
+  justify-content: center;
   gap: 1.5em;
   width: 100%;
   margin-bottom: 1.5em;
 }
 
 .content_servicios .card {
-  width: 25em;
-  min-height: 35em;
+  width: 22em;
+  min-height: 25em;
   border-radius: 1em;
 }
 
-.content_servicios .video{
+.content_servicios .video {
   width: 100%;
   align-content: center;
   justify-content: center;
   text-align: center;
   margin-bottom: .5em;
 }
-.video video{
+
+.video video {
   width: 80%;
   height: 80%;
 }
@@ -374,6 +385,7 @@ section {
   transition: all 0.3s ease-in-out;
   box-shadow: -2px 5px 6px rgba(89, 88, 88, 0.452);
 }
+
 .card .card-body::-webkit-scrollbar {
   width: 6px;
   height: 2px;
@@ -385,16 +397,17 @@ section {
 }
 
 .card .card-body {
-/*   width: 24em; */
+  /*   width: 24em; */
   overflow-y: scroll;
   margin-bottom: 2em;
 }
-.card-text .enfatizar{
+
+.card-text .enfatizar {
   font-style: italic;
 }
 
 .card-body .card-title {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 500;
 }
 
@@ -403,11 +416,13 @@ section {
   padding: 6px;
   /*  filter: drop-shadow(-2px 5px 2px rgba(70, 69, 69, 0.353)); */
 }
+
 .card-body .card-text {
-  padding: 18px;
+  padding: 10px;
   padding-top: 0px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
+
 .contenedor_carrucel {
   margin-top: 2em;
   display: flex;
@@ -416,7 +431,7 @@ section {
   justify-content: center;
   align-items: center;
   max-width: 100% !important;
-  height: 10em;  
+  height: 10em;
 }
 
 .d-block {
@@ -494,6 +509,7 @@ section {
 
 /* --------------------------------seccion nosotros -------------------------------- */
 @keyframes bounceInUp {
+
   from,
   60%,
   75%,
@@ -538,7 +554,7 @@ section {
 
 .nosotros {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.2em;
@@ -556,28 +572,33 @@ section {
    
 } */
 
-.cards-nosotros{
+.cards-nosotros {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: .5em;
   /* width: 100%; */
- /*  padding: 1.5em; */
+  /*  padding: 1.5em; */
 }
-.perfil_up, .perfil_down {
+
+.perfil_up,
+.perfil_down {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  flex-wrap: nowrap; 
+  justify-content: space-between;
+  flex-wrap: nowrap;
   flex-direction: column;
   gap: 1em;
   margin: 1em;
-  
+
 }
+
 /* --------------------------------- prueba card perfil 3D--------------------------------- */
 
 .card-3d {
-  min-width: 380px; /*400px*/
-  height: 470px; /*450px*/
+  min-width: 380px;
+  /*400px*/
+  height: 470px;
+  /*450px*/
   border-radius: 20px;
   position: relative;
   -webkit-transition: 1.2s ease-in-out;
@@ -598,17 +619,19 @@ section {
   color: rgb(24, 23, 23);
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  border-radius: 20px;  
-  
+  border-radius: 20px;
+
 }
 
 .content-3d h1 {
   position: relative;
 }
+
 .content-3d p {
   margin-top: -8px;
   line-height: 2em;
 }
+
 .content-3d h1:before {
   content: "";
   position: absolute;
@@ -618,6 +641,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .content-3d .card-img-top {
   width: 8em;
   padding: 2px;
@@ -634,14 +658,15 @@ section {
   background-size: cover;
   background-color: white;
   position: absolute;
-/*
+  /*
   background-image: url('/public/img/svg/wave_claro_bottom.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-*/  
-  
+*/
+
 }
+
 .back {
   transform: rotateY(180deg);
   z-index: 0;
@@ -649,72 +674,86 @@ section {
   padding-top: 1px;
   background-color: white;
 }
+
 .front h4 {
   color: #1bba40;
 }
+
 .front h5 {
   color: #1bba40;
 }
+
 .front p {
   margin: 1.5em;
   font-size: 1em;
   color: #000000;
   padding: 10px;
 }
+
 .card-3d:hover {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   transition: all 1.4s ease-in-out;
 }
+
 .text_back {
   margin-top: 1.5em;
   text-align: left;
   color: #101111;
 }
+
 .text_back p {
   font-size: .9em;
-  color:#121c09;
+  color: #121c09;
   background-color: #e3f4d5;
   border-radius: .5em;
   padding: 15px;
-  margin:.8em
+  margin: .8em
 }
 
 .text_back ul {
   padding-left: 0.2rem;
   margin-top: 1em;
 }
+
 .text_back li {
   list-style-type: none;
 }
+
 .text_back li::marker {
   color: #31491b;
   font-size: 2em;
 }
+
 .back h1 {
   margin: 0;
 }
+
 .back {
   display: flex;
   flex-direction: row;
   justify-content: end;
 }
+
 .back #linkdin {
   width: 100%;
   top: 400px;
   /* margin-left: 45%; */
   text-align: center;
 }
+
 #linkdin ion-icon {
   font-size: 54px;
-  top: 0;  
+  top: 0;
 }
+
 #linkdin:hover ion-icon {
   transform: scale(1.08);
   transition: all 0.2s ease-in-out;
   filter: drop-shadow(2px 5px 2px rgba(68, 67, 67, 0.573));
   cursor: pointer;
 }
+
 /* ion-icon {
   pointer-events: none;
 }
@@ -735,6 +774,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 /* .logo_tecno {
   padding: 10px;
 } */
@@ -744,12 +784,15 @@ section {
   margin-top: .4em;
   visibility: hidden;
 }
-.figure-caption{
+
+.figure-caption {
   font-weight: bold;
 }
+
 .logo_tecno:hover img {
   animation: shake_ 4s ease infinite;
 }
+
 figure {
   display: flex;
   flex-direction: column;
@@ -759,10 +802,12 @@ figure {
   height: 180px;
   background-color: transparent !important;
 }
-figure img{
+
+figure img {
   width: 6.5em;
   height: 6.5em;
 }
+
 .logo_tecno img {
   /* filter: drop-shadow(0px 0px 12px rgb(209, 208, 208)); */
   box-shadow: 0px 2px 8px rgb(160, 159, 159);
@@ -788,7 +833,7 @@ figure:hover .figure-caption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .contenedor_formulario {
@@ -985,11 +1030,12 @@ footer .redes_sociales ion-icon {
   body {
     width: 100%;
     background-image: url('/public/img/svg/wave_res.svg');
-    background-position:initial;
+    background-position: initial;
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
   }
+
   .navbar-brand {
     margin-left: 0 !important;
   }
@@ -1005,11 +1051,12 @@ footer .redes_sociales ion-icon {
   .texto_section1 h1 {
     margin-top: 4em;
   }
+
   .section_1 {
     margin-bottom: 4em;
     margin-top: 20em;
   }
-  
+
 
   .contenido_section_1,
   .contenido_section_2 {
@@ -1032,7 +1079,7 @@ footer .redes_sociales ion-icon {
   .texto_section2 h2,
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 6vw;
+    font-size: 1.5em;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -1042,7 +1089,7 @@ footer .redes_sociales ion-icon {
   .texto_section2 p,
   .servicios_presentacion p,
   .nosotros_detalle p {
-    font-size: 4.5vw;
+    font-size: 1.5em;
     width: 100%;
     padding: 15px;
   }
@@ -1060,14 +1107,17 @@ footer .redes_sociales ion-icon {
     visibility: visible;
     display: inline;
   }
-  .imagen_laptop{
+
+  .imagen_laptop {
     visibility: hidden;
-    display: none;    
+    display: none;
   }
-  .imagen_dardo{
+
+  .imagen_dardo {
     width: 40%;
-    display: inline;    
+    display: inline;
   }
+
   .imagen_section2 img {
     width: 80vw;
     display: inline;
@@ -1086,7 +1136,7 @@ footer .redes_sociales ion-icon {
 
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 8vw;
+    font-size: 2em;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -1097,17 +1147,20 @@ footer .redes_sociales ion-icon {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    
+
     margin-bottom: 1.5em;
   }
+
   .content_servicios {
-    width: 100%;    
+    width: 100%;
   }
-  .content_servicios .video{
+
+  .content_servicios .video {
     margin-top: 2em;
   }
-  
-  .tarjetas_up, .tarjetas_down {
+
+  .tarjetas_up,
+  .tarjetas_down {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1115,8 +1168,9 @@ footer .redes_sociales ion-icon {
     width: 70vw;
     margin-bottom: 1.5em;
   }
+
   .card {
-    width: 100% ;
+    width: 100%;
     margin-top: 1em;
   }
 
@@ -1141,7 +1195,8 @@ footer .redes_sociales ion-icon {
     max-width: 100% !important;
     height: 4em;
   }
-  .contenedor_carrucel h2{
+
+  .contenedor_carrucel h2 {
     width: 80%;
     text-align: center;
   }
@@ -1178,11 +1233,9 @@ footer .redes_sociales ion-icon {
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(
-      to right,
-      white 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to right,
+        white 0%,
+        rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
     position: absolute;
@@ -1217,22 +1270,25 @@ footer .redes_sociales ion-icon {
   .nosotros {
     width: 100%;
   }
-  
 
-.nosotros_detalle h2{
-  margin-top: 2em;
-}
-.cards-nosotros{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1.5em;
-  /* width: 100%;
+
+  .nosotros_detalle h2 {
+    margin-top: 2em;
+  }
+
+  .cards-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5em;
+    /* width: 100%;
   padding: 1.5em; */
-}
+  }
 
   .card-3d {
-    min-width: 400px; /*400px*/
-    min-height: 450px; /*450px*/
+    min-width: 400px;
+    /*400px*/
+    min-height: 450px;
+    /*450px*/
     border-radius: 20px;
     position: relative;
     -webkit-transition: 1.5s ease-in-out;
@@ -1241,9 +1297,9 @@ footer .redes_sociales ion-icon {
     border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
     background-color: whitesmoke;
-  
+
   }
-  
+
   .side {
     position: absolute;
     text-align: center;
@@ -1253,17 +1309,19 @@ footer .redes_sociales ion-icon {
     color: rgb(24, 23, 23);
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    border-radius: 20px;  
-    
+    border-radius: 20px;
+
   }
-  
+
   .content-3d h1 {
     position: relative;
   }
+
   .content-3d p {
- /*    margin-top: -8px; */
+    /*    margin-top: -8px; */
     line-height: 2em;
   }
+
   .content-3d h1:before {
     content: "";
     position: absolute;
@@ -1273,6 +1331,7 @@ footer .redes_sociales ion-icon {
     left: 50%;
     transform: translateX(-50%);
   }
+
   .content-3d .card-img-top {
     width: 8em;
     padding: 2px;
@@ -1282,15 +1341,16 @@ footer .redes_sociales ion-icon {
     filter: grayscale(1);
     box-shadow: 0px 5px 12px rgb(195, 192, 192);
   }
-  
+
   .front {
     z-index: 2;
     background-size: 100vh;
     background-size: cover;
     background-color: white;
     position: absolute;
-    
+
   }
+
   .back {
     transform: rotateY(180deg);
     z-index: 0;
@@ -1298,71 +1358,84 @@ footer .redes_sociales ion-icon {
     padding-top: 1px;
     background-color: white;
   }
+
   .front h4 {
     color: #1bba40;
   }
+
   .front h5 {
     color: #1bba40;
   }
+
   .front p {
     margin: 1.5em;
     font-size: 1em;
     color: #000000;
     padding: 10px;
   }
+
   .card-3d:hover {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     transition: all 1.4s ease-in-out;
   }
+
   .text_back {
     margin-top: 1.5em;
     text-align: left;
     color: #101111;
   }
+
   .text_back p {
     font-size: .9em;
-    color:#121c09;
+    color: #121c09;
     background-color: #e3f4d5;
     border-radius: .5em;
     padding: 15px;
-    margin:.8em
+    margin: .8em
   }
-  
+
   .text_back ul {
     padding-left: 0.2rem;
     margin-top: 1em;
   }
+
   .text_back li {
     list-style-type: none;
   }
+
   .text_back li::marker {
     color: #31491b;
     font-size: 2em;
   }
+
   .back h1 {
     margin: 0;
   }
+
   .back {
     display: flex;
     flex-direction: row;
     justify-content: end;
   }
+
   .back #linkdin {
     width: 100%;
     top: 400px;
     text-align: center;
   }
+
   .back #linkdin ion-icon {
     font-size: 54px;
     bottom: 0;
   }
+
   .back #linkdin:hover ion-icon {
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
     filter: drop-shadow(2px 5px 2px rgba(68, 67, 67, 0.573));
   }
-  
+
   .tecno {
     display: flex;
     flex-direction: row;
@@ -1373,6 +1446,7 @@ footer .redes_sociales ion-icon {
     gap: .1em;
     margin-top: .2em;
   }
+
   /* .logo_tecno {
     padding: 5px;
   } */
@@ -1385,14 +1459,17 @@ footer .redes_sociales ion-icon {
     height: 120px !important;
     background-color: transparent !important;
   }
+
   .logo_tecno .figure-caption {
     text-align: center;
     margin: 0 auto;
     visibility: hidden;
   }
+
   .logo_tecno:hover img {
     animation: shake_ 4s ease infinite;
   }
+
   figure:hover .figure-caption {
     visibility: visible;
     animation: shake_ 4s ease infinite;
@@ -1468,11 +1545,12 @@ footer .redes_sociales ion-icon {
   body {
     width: 100%;
     background-image: url('/public/img/svg/wave_res.svg');
-    background-position:initial;
+    background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
+
   .navbar-brand {
     margin-left: 0 !important;
   }
@@ -1510,9 +1588,9 @@ footer .redes_sociales ion-icon {
   .texto_section2 h2,
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 6vw;
+    font-size: 1.5em;
     width: 100%;
-    padding: 20px;
+    padding: 1em;
     text-align: center;
   }
 
@@ -1520,43 +1598,46 @@ footer .redes_sociales ion-icon {
   .texto_section2 p,
   .servicios_presentacion p,
   .nosotros_detalle p {
-    font-size: 4.5vw;
+    font-size: 1em;
     width: 100%;
-    padding-left: 2.5em;
-    padding-right: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
- .imagen_section1,
- .imagen_section2 {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-  justify-content: center;
-  align-items: center;
- }
+  .imagen_section1,
+  .imagen_section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 
- .imagen_section1 img {
-   width: 70%;
-   padding: .5em;   
-   margin-top: 8em !important;
-   visibility: visible;
-   display: inline;
- }
- .imagen_laptop{
-   visibility: hidden;
-   display: none;    
- }
- .imagen_dardo{
-   width: 40%;
-   display: none;    
- }
- .imagen_section2 img {
-   display: inline;
-   width: 70%;
-   padding: .5em;
-   margin-left: 2em;
-   margin-top: 25em;
- }
+  .imagen_section1 img {
+    width: 70%;
+    padding: 1em;
+    margin-top: 10em !important;
+    visibility: visible;
+    display: inline;
+  }
+
+  .imagen_laptop {
+    visibility: hidden;
+    display: none;
+  }
+
+  .imagen_dardo {
+    width: 40%;
+    display: none;
+  }
+
+  .imagen_section2 img {
+    display: inline;
+    width: 70%;
+    padding: 2em;
+    /* margin-left: 1em; */
+    margin-top: 20em;
+  }
 
   /* -------------------------------- servicios ------------------------------- */
   .servicios_presentacion,
@@ -1567,32 +1648,33 @@ footer .redes_sociales ion-icon {
 
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 8vw;
+    font-size: 2.5em;
     width: 100%;
     padding: 10px;
     text-align: center;
   }
+
   .conten-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 1.5vw;
+    gap: 1.5em;
     width: 70vw;
     margin-bottom: 1.5em;
   }
-  
-  .tarjetas_up, .tarjetas_down {
+
+  .tarjetas_up,
+  .tarjetas_down {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-    /* gap: 1.5em;
-    width: 70vw;
-    margin-bottom: 1.5em; */
+
+
   }
+
   .card {
-    width: 100% ;
+    width: 100%;
     margin-top: 1em;
   }
 
@@ -1650,11 +1732,9 @@ footer .redes_sociales ion-icon {
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(
-      to right,
-      white 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to right,
+        white 0%,
+        rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
     position: absolute;
@@ -1689,9 +1769,12 @@ footer .redes_sociales ion-icon {
   .nosotros {
     width: 100%;
   }
+
   .card-3d {
-    min-width: 350px; /*400px*/
-    min-height: 480px; /*450px*/
+    min-width: 20em;
+    /*400px*/
+    min-height: 30em;
+    /*450px*/
     border-radius: 20px;
     position: relative;
     -webkit-transition: 1.5s ease-in-out;
@@ -1700,7 +1783,7 @@ footer .redes_sociales ion-icon {
     border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
     background-color: white;
-  
+
   }
 
   .tecno {
@@ -1713,17 +1796,21 @@ footer .redes_sociales ion-icon {
     gap: 1em;
     margin-top: 2em;
   }
+
   .logo_tecno {
     padding: 5px;
   }
+
   .logo_tecno .figure-caption {
     text-align: center;
     margin: 0 auto;
     visibility: hidden;
   }
+
   .logo_tecno:hover img {
     animation: shake_ 4s ease infinite;
   }
+
   figure:hover .figure-caption {
     visibility: visible;
     animation: shake_ 4s ease infinite;
@@ -1762,7 +1849,7 @@ footer .redes_sociales ion-icon {
     padding: 2em;
     margin: 0.5em !important;
     margin: 0 auto;
-    /* background-color: rgba(26, 25, 25, 0.6); */
+
     border-radius: 0.5em;
   }
 
@@ -1799,11 +1886,12 @@ footer .redes_sociales ion-icon {
   body {
     width: 100%;
     background-image: url('/public/img/svg/wave_res.svg');
-    background-position:initial;
+    background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
+
   .navbar-brand {
     margin-left: 0 !important;
   }
@@ -1841,7 +1929,7 @@ footer .redes_sociales ion-icon {
   .texto_section2 h2,
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 4vw;
+    font-size: 2em;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -1851,54 +1939,45 @@ footer .redes_sociales ion-icon {
   .texto_section2 p,
   .servicios_presentacion p,
   .nosotros_detalle p {
-    font-size: 2.5vw;
+    font-size: 1.5em;
     width: 100%;
     padding: 15px;
   }
-/* 
+
   .imagen_section1,
   .imagen_section2 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .imagen_section1 img,
+  .imagen_section1 img {
+    width: 50%;
+    padding: 1.5em;
+    margin-top: 30em !important;
+    visibility: visible;
+    display: inline;
+  }
+
+  .imagen_laptop {
+    visibility: hidden;
+    display: none;
+  }
+
+  .imagen_dardo {
+    width: 40%;
+    display: none;
+  }
+
   .imagen_section2 img {
-    width: 80vw;
+    display: inline;
+    width: 50%;
     padding: 2.5em;
     margin-left: 2em;
+    margin-top: 25em;
   }
- */
 
- .imagen_section1,
- .imagen_section2 {
-   width: 100%;
-   display: flex;
-  justify-content: center;
-  align-items: center;
- }
-
- .imagen_section1 img {
-   width: 50%;
-   padding: 1.5em;   
-   margin-top: 30em !important;
-   visibility: visible;
-   display: inline;
- }
- .imagen_laptop{
-   visibility: hidden;
-   display: none;    
- }
- .imagen_dardo{
-   width: 40%;
-   display: none;    
- }
- .imagen_section2 img {
-   display: inline;
-   width: 50%;
-   padding: 2.5em;
-   margin-left: 2em;
-   margin-top: 25em;
- }
   /* -------------------------------- servicios ------------------------------- */
   .servicios_presentacion,
   .nosotros_detalle {
@@ -1908,11 +1987,12 @@ footer .redes_sociales ion-icon {
 
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 8vw;
+    font-size: 2em;
     width: 100%;
     padding: 10px;
     text-align: center;
   }
+
   .conten-card {
     display: flex;
     flex-direction: row;
@@ -1922,15 +2002,12 @@ footer .redes_sociales ion-icon {
     width: 70vw;
     margin-bottom: 1.5em;
   }
-  
-  .tarjetas_up, .tarjetas_down {
+
+  .tarjetas_up,
+  .tarjetas_down {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-    /* gap: 1.5em;
-    width: 70vw;
-    margin-bottom: 1.5em; */
   }
 
   .card {
@@ -1989,11 +2066,9 @@ footer .redes_sociales ion-icon {
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(
-      to right,
-      white 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to right,
+        white 0%,
+        rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
     position: absolute;
@@ -2038,9 +2113,12 @@ footer .redes_sociales ion-icon {
     width: 90vw;
     margin-bottom: 1.5em;
   }
+
   .card-3d {
-    min-width: 350px; /*400px*/
-    min-height: 500px; /*450px*/
+    min-width: 350px;
+    /*400px*/
+    min-height: 500px;
+    /*450px*/
     border-radius: 20px;
     position: relative;
     -webkit-transition: 1.5s ease-in-out;
@@ -2049,8 +2127,9 @@ footer .redes_sociales ion-icon {
     border-radius: 0.5em;
     box-shadow: 0px 5px 16px rgba(205, 203, 203, 0.645);
     background-color: white;
-  
+
   }
+
   .tecno {
     display: flex;
     flex-direction: row;
@@ -2061,17 +2140,21 @@ footer .redes_sociales ion-icon {
     gap: 1em;
     margin-top: 2em;
   }
+
   .logo_tecno {
     padding: 10px;
   }
+
   .logo_tecno .figure-caption {
     text-align: center;
     margin: 0 auto;
     visibility: hidden;
   }
+
   .logo_tecno:hover img {
     animation: shake_ 4s ease infinite;
   }
+
   figure:hover .figure-caption {
     visibility: visible;
     animation: shake_ 4s ease infinite;
@@ -2147,11 +2230,12 @@ footer .redes_sociales ion-icon {
   body {
     width: 100%;
     background-image: url('/public/img/svg/wave_res.svg');
-    background-position:initial;
+    background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
+
   .navbar-brand {
     margin-left: 0 !important;
   }
@@ -2189,7 +2273,7 @@ footer .redes_sociales ion-icon {
   .texto_section2 h2,
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 4vw;
+    font-size: 2em;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -2199,13 +2283,13 @@ footer .redes_sociales ion-icon {
   .texto_section2 p,
   .servicios_presentacion p,
   .nosotros_detalle p {
-    font-size: 2.5vw;
+    font-size: 1.5em;
     width: 100%;
     padding-left: 2.5em;
     padding-right: 1.5em;
   }
 
-/*   .imagen_section1,
+  /*   .imagen_section1,
   .imagen_section2 {
     width: 100%;
   }
@@ -2218,36 +2302,39 @@ footer .redes_sociales ion-icon {
   }
  */
 
- .imagen_section1,
- .imagen_section2 {
-   width: 100%;
-   display: flex;
-  justify-content: center;
-  align-items: center;
- }
+  .imagen_section1,
+  .imagen_section2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
- .imagen_section1 img {
-   width: 50%;
-   padding: 1.5em;   
-   margin-top: 37em !important;
-   visibility: visible;
-   display: inline;
- }
- .imagen_laptop{
-   visibility: hidden;
-   display: none;    
- }
- .imagen_dardo{
-   width: 40%;
-   display: none;    
- }
- .imagen_section2 img {
-   display: inline;
-   width: 50%;
-   padding: 2.5em;
-   margin-left: 2em;
-   margin-top: 35em;
- }
+  .imagen_section1 img {
+    width: 50%;
+    padding: 1.5em;
+    margin-top: 37em !important;
+    visibility: visible;
+    display: inline;
+  }
+
+  .imagen_laptop {
+    visibility: hidden;
+    display: none;
+  }
+
+  .imagen_dardo {
+    width: 40%;
+    display: none;
+  }
+
+  .imagen_section2 img {
+    display: inline;
+    width: 50%;
+    padding: 2.5em;
+    margin-left: 2em;
+    margin-top: 35em;
+  }
 
   /* -------------------------------- servicios ------------------------------- */
   .servicios_presentacion,
@@ -2258,11 +2345,12 @@ footer .redes_sociales ion-icon {
 
   .servicios_presentacion h2,
   .nosotros_detalle h2 {
-    font-size: 8vw;
+    font-size: 2em;
     width: 100%;
     padding: 10px;
     text-align: center;
   }
+
   .conten-card {
     display: flex;
     flex-direction: row;
@@ -2272,18 +2360,20 @@ footer .redes_sociales ion-icon {
     width: 70vw;
     margin-bottom: 1.5em;
   }
-  
-  .tarjetas_up, .tarjetas_down {
+
+  .tarjetas_up,
+  .tarjetas_down {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
     /* gap: 1.5em;
     width: 70vw;
     margin-bottom: 1.5em; */
   }
+
   .card {
-    width: 100% ;
+    width: 100%;
     margin-top: 1em;
   }
 
@@ -2342,11 +2432,9 @@ footer .redes_sociales ion-icon {
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(
-      to right,
-      white 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to right,
+        white 0%,
+        rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
     position: absolute;
@@ -2444,6 +2532,7 @@ footer .redes_sociales ion-icon {
     gap: 1em;
     margin-top: 2em;
   }
+
   .logo_tecno {
     padding: 5px;
   }
@@ -2453,9 +2542,11 @@ footer .redes_sociales ion-icon {
     margin: 0 auto;
     visibility: hidden;
   }
+
   .logo_tecno:hover img {
     animation: shake_ 4s ease infinite;
   }
+
   figure:hover .figure-caption {
     visibility: visible;
     animation: shake_ 4s ease infinite;
@@ -2465,6 +2556,7 @@ footer .redes_sociales ion-icon {
     box-shadow: 0px 2px 8px rgb(160, 159, 159);
     border-radius: 50% !important;
   }
+
   /* -------------------------------- contacto -------------------------------- */
   .contacto {
     display: flex;
@@ -2519,6 +2611,7 @@ footer .redes_sociales ion-icon {
     border-radius: 0.5em !important;
     width: 100% !important;
   }
+
   footer {
     display: flex;
     flex-direction: row;
@@ -2529,9 +2622,11 @@ footer .redes_sociales ion-icon {
     background-color: var(--verde_difuso);
     bottom: auto;
   }
+
   footer .direccion {
     margin-left: 1.5em;
   }
+
   .derechos {
     text-align: center;
     color: rgb(31, 30, 30);
@@ -2540,20 +2635,21 @@ footer .redes_sociales ion-icon {
     bottom: 0;
     background-color: var(--verde_muyclaro);
   }
+
   .derechos p {
     margin-top: 2em;
   }
 }
 
-@media all and (min-width: 961px){
+@media all and (min-width: 961px) {
 
-.cards-nosotros{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5em;
-  padding: 1.5em;
-  justify-content: center;
-}
+  .cards-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em;
+    justify-content: center;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
