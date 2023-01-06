@@ -1942,6 +1942,28 @@ footer .redes_sociales ion-icon {
   footer .direccion {
     margin-left: 1.5em;
   }
+
+.derechos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(31, 30, 30);
+  background-color: var(--verde_soft);
+  width: 100%;
+  height: 12em;
+}
+
+.derechos #p {
+  margin-top: .2em;
+}
+
+.derechos #img {
+  width: 20vh;
+  margin-top: 0em;
+}
+
 }
 
 @media all and (min-width: 480px) and (max-width: 767px) {
