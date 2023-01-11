@@ -6,7 +6,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+@keyframes shake_ {
+  0% {
+    transform: translateY(5px);
+  }
 
+  25% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes shakex {
+  0% {
+    transform: translateX(10px);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+}
 
 :root {
   --animate-duration: 800ms;
@@ -232,7 +258,6 @@ section {
 .texto_section2 p {
   font-size: 1.5em;
   width: 100%;
-  /* padding: 10px; */
   padding-left: 0px;
   padding-right: 20px;
   margin-right: 5em;
@@ -245,7 +270,8 @@ section {
 }
 
 .imagen_section1 img {
-  /* width: 25vw; */
+  width: 25vw;
+  height: auto;
   position: relative;
   animation: shake_ 4s ease-in-out infinite;
   margin-left: 5em;
@@ -260,17 +286,18 @@ section {
   display: inline; */
 }
 
-.imagen_dardo {
+/* .imagen_dardo {
   width: 25vw;
   height: auto;
   margin-top: 1em;
   margin-right: 4em;
   position: relative;
   animation: shake_ 5s ease-in-out infinite;
-}
+} */
 
 .imagen_section2 img {
- /*  width: 25vw; */
+  width: 25vw;
+  height: auto;
   margin-top: 1em;
   margin-left: 5em;
   position: relative;
@@ -279,33 +306,7 @@ section {
   /* filter: drop-shadow(-2px 0px 6px rgba(16, 16, 16, 0.873)); */
 }
 
-@keyframes shake_ {
-  0% {
-    transform: translateY(5px);
-  }
 
-  25% {
-    transform: translateY(-5px);
-  }
-
-  100% {
-    transform: translateY(5px);
-  }
-}
-
-@keyframes shakex {
-  0% {
-    transform: translateX(10px);
-  }
-
-  25% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    transform: translateX(10px);
-  }
-}
 
 /* -------------------------------- section 2 ------------------------------- */
 
@@ -809,9 +810,6 @@ section {
   align-items: center;
 }
 
-/* .logo_tecno {
-  padding: 10px;
-} */
 .logo_tecno .figure-caption {
   text-align: center;
   margin: 0 auto;
@@ -1146,10 +1144,11 @@ footer .redes_sociales ion-icon {
   .imagen_laptop,
   .imagen_section2 {
     width: 100%;
+    height: auto;
   }
 
   .imagen_section1 img {
-    /* width: 90vw; */
+    width: 90vw;
     padding: 2.5em;
     margin-left: 2em;
     margin-top: 10em;
@@ -1168,7 +1167,8 @@ footer .redes_sociales ion-icon {
   }
 
   .imagen_section2 img {
-    /* width: 80vw; */
+    width: 80vw;
+    height: auto;
     display: inline;
     padding: 4.5em;
     margin-left: 2em;
