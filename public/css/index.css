@@ -73,11 +73,11 @@ nav {
   padding: 10px;
   margin-left: 5em !important;
 }
-
 .navbar-brand img {
-  justify-content: flex-start;
-  align-self: flex-end;
-}
+    justify-content: flex-start;
+    align-self: flex-end;
+    
+  } 
 
 #navbarNav {
   align-content: center;
@@ -106,7 +106,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 2em;
-  margin-left: 10em;
+  
   
 }
 .banderas img{
@@ -245,12 +245,11 @@ section {
 }
 
 .imagen_section1 img {
-  width: 25vw;
+  /* width: 25vw; */
   position: relative;
   animation: shake_ 4s ease-in-out infinite;
   margin-left: 5em;
   margin-top: 1em;
-
   /* margin-bottom: 1.5em; */
   /* filter: drop-shadow(-2px 0px 6px rgba(16, 16, 16, 0.873)); */
 }
@@ -263,6 +262,7 @@ section {
 
 .imagen_dardo {
   width: 25vw;
+  height: auto;
   margin-top: 1em;
   margin-right: 4em;
   position: relative;
@@ -270,7 +270,7 @@ section {
 }
 
 .imagen_section2 img {
-  width: 25vw;
+ /*  width: 25vw; */
   margin-top: 1em;
   margin-left: 5em;
   position: relative;
@@ -597,16 +597,6 @@ section {
   margin-top: 4em !important;
 }
 
-/* .cards-nosotros {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2em;
-  width: 100%;
-  justify-content: center;
-   
-} */
-
 .cards-nosotros {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -769,9 +759,18 @@ section {
   flex-direction: row;
   justify-content: end;
 }
-
-.back #linkdin {
+.contenedor_linkedin{
+  
   width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.back #linkdin {
+  width: 60px;
+
   top: 400px;
   /* margin-left: 45%; */
   text-align: center;
@@ -1087,6 +1086,7 @@ footer .redes_sociales ion-icon {
   }
   .navbar-brand {
     margin-left: 0 !important;
+    width: 12em;
   }
 
   .barra-nav_footer {
@@ -1149,7 +1149,7 @@ footer .redes_sociales ion-icon {
   }
 
   .imagen_section1 img {
-    width: 90vw;
+    /* width: 90vw; */
     padding: 2.5em;
     margin-left: 2em;
     margin-top: 10em;
@@ -1168,7 +1168,7 @@ footer .redes_sociales ion-icon {
   }
 
   .imagen_section2 img {
-    width: 80vw;
+    /* width: 80vw; */
     display: inline;
     padding: 4.5em;
     margin-left: 2em;
@@ -1468,9 +1468,18 @@ footer .redes_sociales ion-icon {
     justify-content: end;
   }
 
-  .back #linkdin {
+  .contenedor_linkedin{
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .back #linkdin {
+    width: 60px;  
     top: 400px;
+    /* margin-left: 45%; */
     text-align: center;
   }
 
@@ -1671,7 +1680,7 @@ footer .redes_sociales ion-icon {
   }
 
   .imagen_section1 img {
-    width: 70%;
+    /* width: 70%; */
     padding: 1em;
     margin-top: 9em !important;
     visibility: visible;
@@ -1690,7 +1699,7 @@ footer .redes_sociales ion-icon {
 
   .imagen_section2 img {
     display: inline;
-    width: 70%;
+    /* width: 70%; */
     padding: 2em;
     /* margin-left: 1em; */
     margin-top: 22em;
@@ -2738,7 +2747,41 @@ footer .redes_sociales ion-icon {
     padding: 1.5em;
     justify-content: center;
   }
+  /* .navbar-brand{
+    width: 12em;
+    margin-left: 0em !important; 
+  }
+   .navbar-brand img {
+    justify-content: flex-start;
+    align-self: flex-end;
+    width: 200px
+  } */
 }
+
+/*
+
+@media all and (max-width: 1100px) {
+
+  .cards-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    padding: 1.5em;
+    justify-content: center;
+  }
+  .navbar-brand{
+    width: 12em !important;
+    margin-left: 0em !important; 
+  }
+   .navbar-brand img {
+    justify-content: flex-start;
+    align-self: flex-end;
+    width: 200px
+  }
+}
+
+*/
+
 
 /* -------------------------------------------------------------------------- */
 /*                             ESTILOS DE PRUEBAS                             */
